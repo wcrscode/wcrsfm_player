@@ -1,0 +1,1469 @@
+{
+  "fetched_at": "2026-07-08T11:14:53",
+  "days": {
+    "MON": [
+      {
+        "name": "Non-Stop w/DJ Crucifader and Friends",
+        "description": "",
+        "start": "00:00",
+        "end": "02:00",
+        "start_display": "12:00 am",
+        "end_display": "2:00 am",
+        "url": "",
+        "program_slug": "non-stop-wdj-crucifader-and-friends"
+      },
+      {
+        "name": "Bass Kulture",
+        "description": "",
+        "start": "02:00",
+        "end": "03:00",
+        "start_display": "2:00 am",
+        "end_display": "3:00 am",
+        "url": "",
+        "program_slug": "rekloos-presents-bass-kulture"
+      },
+      {
+        "name": "Bob's Basement Jazz",
+        "description": "",
+        "start": "03:00",
+        "end": "05:00",
+        "start_display": "3:00 am",
+        "end_display": "5:00 am",
+        "url": "",
+        "program_slug": "bobs-basement-jazz"
+      },
+      {
+        "name": "The Global Village with Chris Heim",
+        "description": "",
+        "start": "05:00",
+        "end": "06:00",
+        "start_display": "5:00 am",
+        "end_display": "6:00 am",
+        "url": "",
+        "program_slug": "global-village"
+      },
+      {
+        "name": "Morning Meditation",
+        "description": "Beginning Of Day",
+        "start": "06:00",
+        "end": "06:30",
+        "start_display": "6:00 am",
+        "end_display": "6:30 am",
+        "url": "",
+        "program_slug": ""
+      },
+      {
+        "name": "Informativo Pacifica",
+        "description": "Spanish Language News",
+        "start": "06:30",
+        "end": "07:00",
+        "start_display": "6:30 am",
+        "end_display": "7:00 am",
+        "url": "",
+        "program_slug": "informativo-pacifica"
+      },
+      {
+        "name": "Hidden Hits Hour",
+        "description": "",
+        "start": "07:00",
+        "end": "08:00",
+        "start_display": "7:00 am",
+        "end_display": "8:00 am",
+        "url": "",
+        "program_slug": "hidden-hits-hour"
+      },
+      {
+        "name": "DemocracyNow! Live",
+        "description": "",
+        "start": "08:00",
+        "end": "09:00",
+        "start_display": "8:00 am",
+        "end_display": "9:00 am",
+        "url": "",
+        "program_slug": "democracy-now"
+      },
+      {
+        "name": "Bradcast",
+        "description": "",
+        "start": "09:00",
+        "end": "10:00",
+        "start_display": "9:00 am",
+        "end_display": "10:00 am",
+        "url": "",
+        "program_slug": "bradcast"
+      },
+      {
+        "name": "Exploration",
+        "description": "",
+        "start": "10:00",
+        "end": "11:00",
+        "start_display": "10:00 am",
+        "end_display": "11:00 am",
+        "url": "",
+        "program_slug": "exporation"
+      },
+      {
+        "name": "Making Contact",
+        "description": "",
+        "start": "11:00",
+        "end": "11:30",
+        "start_display": "11:00 am",
+        "end_display": "11:30 am",
+        "url": "",
+        "program_slug": "making-contact"
+      },
+      {
+        "name": "Shortwave Report",
+        "description": "",
+        "start": "11:30",
+        "end": "12:00",
+        "start_display": "11:30 am",
+        "end_display": "12:00 pm",
+        "url": "",
+        "program_slug": "shortwave-report"
+      },
+      {
+        "name": "Hack Thoughts",
+        "description": "",
+        "start": "12:00",
+        "end": "13:00",
+        "start_display": "12:00 pm",
+        "end_display": "1:00 pm",
+        "url": "",
+        "program_slug": "hackthought"
+      },
+      {
+        "name": "Barnaby Druthers",
+        "description": "",
+        "start": "13:00",
+        "end": "14:00",
+        "start_display": "1:00 pm",
+        "end_display": "2:00 pm",
+        "url": "",
+        "program_slug": "barnaby-druthers"
+      },
+      {
+        "name": "Everybody Knows",
+        "description": "",
+        "start": "14:00",
+        "end": "15:00",
+        "start_display": "2:00 pm",
+        "end_display": "3:00 pm",
+        "url": "",
+        "program_slug": "everybody-knows-dr-bob-and-dan-o"
+      },
+      {
+        "name": "Integrated Schools",
+        "description": "",
+        "start": "15:00",
+        "end": "16:00",
+        "start_display": "3:00 pm",
+        "end_display": "4:00 pm",
+        "url": "https://integratedschools.com",
+        "program_slug": "integrated-schools-podcast"
+      },
+      {
+        "name": "The Final Straw",
+        "description": "",
+        "start": "16:00",
+        "end": "17:00",
+        "start_display": "4:00 pm",
+        "end_display": "5:00 pm",
+        "url": "https://thefinalstrawradio.noblogs.org/",
+        "program_slug": "final-straw"
+      },
+      {
+        "name": "Democracy Now PM",
+        "description": "",
+        "start": "17:00",
+        "end": "18:00",
+        "start_display": "5:00 pm",
+        "end_display": "6:00 pm",
+        "url": "",
+        "program_slug": "democracy-now"
+      },
+      {
+        "name": "Hard Knock Radio",
+        "description": "",
+        "start": "18:00",
+        "end": "19:00",
+        "start_display": "6:00 pm",
+        "end_display": "7:00 pm",
+        "url": "",
+        "program_slug": "hard-knock-radio"
+      },
+      {
+        "name": "First You Hustle",
+        "description": "",
+        "start": "19:00",
+        "end": "19:30",
+        "start_display": "7:00 pm",
+        "end_display": "7:30 pm",
+        "url": "",
+        "program_slug": "first-you-hustle"
+      },
+      {
+        "name": "Sprouts",
+        "description": "",
+        "start": "19:30",
+        "end": "20:00",
+        "start_display": "7:30 pm",
+        "end_display": "8:00 pm",
+        "url": "",
+        "program_slug": "sprouts"
+      },
+      {
+        "name": "DJBC Happy Hour",
+        "description": "",
+        "start": "20:00",
+        "end": "21:00",
+        "start_display": "8:00 pm",
+        "end_display": "9:00 pm",
+        "url": "",
+        "program_slug": "djbc-happy-hour"
+      },
+      {
+        "name": "Your Music",
+        "description": "",
+        "start": "21:00",
+        "end": "23:00",
+        "start_display": "9:00 pm",
+        "end_display": "11:00 pm",
+        "url": "",
+        "program_slug": "your-music"
+      },
+      {
+        "name": "divinityisreal",
+        "description": "",
+        "start": "23:00",
+        "end": "00:00",
+        "start_display": "11:00 pm",
+        "end_display": "12:00 am",
+        "url": "",
+        "program_slug": ""
+      }
+    ],
+    "TUE": [
+      {
+        "name": "It's All Happening",
+        "description": "",
+        "start": "00:00",
+        "end": "01:00",
+        "start_display": "12:00 am",
+        "end_display": "1:00 am",
+        "url": "",
+        "program_slug": "its-all-happening"
+      },
+      {
+        "name": "Everybody Knows",
+        "description": "",
+        "start": "01:00",
+        "end": "02:00",
+        "start_display": "1:00 am",
+        "end_display": "2:00 am",
+        "url": "",
+        "program_slug": "everybody-knows-dr-bob-and-dan-o"
+      },
+      {
+        "name": "DJBC Happy Hour",
+        "description": "",
+        "start": "02:00",
+        "end": "03:00",
+        "start_display": "2:00 am",
+        "end_display": "3:00 am",
+        "url": "",
+        "program_slug": "djbc-happy-hour"
+      },
+      {
+        "name": "Your Music",
+        "description": "",
+        "start": "03:00",
+        "end": "05:00",
+        "start_display": "3:00 am",
+        "end_display": "5:00 am",
+        "url": "",
+        "program_slug": "your-music"
+      },
+      {
+        "name": "The Global Village with Chris Heim",
+        "description": "",
+        "start": "05:00",
+        "end": "05:04",
+        "start_display": "5:00 am",
+        "end_display": "5:04 am",
+        "url": "",
+        "program_slug": "global-village"
+      },
+      {
+        "name": "Morning Meditation",
+        "description": "Beginning Of Day",
+        "start": "06:00",
+        "end": "06:30",
+        "start_display": "6:00 am",
+        "end_display": "6:30 am",
+        "url": "",
+        "program_slug": ""
+      },
+      {
+        "name": "Informativo Pacifica",
+        "description": "Spanish Language News",
+        "start": "06:30",
+        "end": "07:00",
+        "start_display": "6:30 am",
+        "end_display": "7:00 am",
+        "url": "",
+        "program_slug": "informativo-pacifica"
+      },
+      {
+        "name": "YTS Classics",
+        "description": "",
+        "start": "07:00",
+        "end": "08:00",
+        "start_display": "7:00 am",
+        "end_display": "8:00 am",
+        "url": "",
+        "program_slug": "yts-classics-overnight"
+      },
+      {
+        "name": "DemocracyNow! Live",
+        "description": "",
+        "start": "08:00",
+        "end": "09:00",
+        "start_display": "8:00 am",
+        "end_display": "9:00 am",
+        "url": "",
+        "program_slug": "democracy-now"
+      },
+      {
+        "name": "Bradcast",
+        "description": "",
+        "start": "09:00",
+        "end": "10:00",
+        "start_display": "9:00 am",
+        "end_display": "10:00 am",
+        "url": "",
+        "program_slug": "bradcast"
+      },
+      {
+        "name": "Big Picture Science",
+        "description": "",
+        "start": "10:00",
+        "end": "11:00",
+        "start_display": "10:00 am",
+        "end_display": "11:00 am",
+        "url": "http://bigpicturescience.org/",
+        "program_slug": ""
+      },
+      {
+        "name": "Sea Change Radio",
+        "description": "",
+        "start": "11:00",
+        "end": "11:30",
+        "start_display": "11:00 am",
+        "end_display": "11:30 am",
+        "url": "",
+        "program_slug": "sea-change-radio"
+      },
+      {
+        "name": "Radio Curious",
+        "description": "",
+        "start": "11:30",
+        "end": "12:00",
+        "start_display": "11:30 am",
+        "end_display": "12:00 pm",
+        "url": "",
+        "program_slug": "radio-curious"
+      },
+      {
+        "name": "Old Time Radio",
+        "description": "",
+        "start": "12:00",
+        "end": "15:00",
+        "start_display": "12:00 pm",
+        "end_display": "3:00 pm",
+        "url": "",
+        "program_slug": ""
+      },
+      {
+        "name": "This Way Out",
+        "description": "",
+        "start": "15:00",
+        "end": "15:30",
+        "start_display": "3:00 pm",
+        "end_display": "3:30 pm",
+        "url": "",
+        "program_slug": "this-way-out"
+      },
+      {
+        "name": "CounterSpin",
+        "description": "",
+        "start": "15:30",
+        "end": "16:00",
+        "start_display": "3:30 pm",
+        "end_display": "4:00 pm",
+        "url": "",
+        "program_slug": "counterspin"
+      },
+      {
+        "name": "Radio Ecoshock",
+        "description": "",
+        "start": "16:00",
+        "end": "17:00",
+        "start_display": "4:00 pm",
+        "end_display": "5:00 pm",
+        "url": "",
+        "program_slug": "radio-ecoshock"
+      },
+      {
+        "name": "Democracy Now PM",
+        "description": "",
+        "start": "17:00",
+        "end": "18:00",
+        "start_display": "5:00 pm",
+        "end_display": "6:00 pm",
+        "url": "",
+        "program_slug": "democracy-now"
+      },
+      {
+        "name": "You Earned This",
+        "description": "\"You Earned This\" is a weekly radio program focusing on issues affecting listeners 55+ and their families --- including Social Security, Medicare, Medicaid, Prescription Drug Pricing, and everything you need to know about aging well in America!",
+        "start": "18:00",
+        "end": "18:30",
+        "start_display": "6:00 pm",
+        "end_display": "6:30 pm",
+        "url": "",
+        "program_slug": "you-earned-this"
+      },
+      {
+        "name": "The Laura Flanders Show",
+        "description": "",
+        "start": "18:30",
+        "end": "19:00",
+        "start_display": "6:30 pm",
+        "end_display": "7:00 pm",
+        "url": "",
+        "program_slug": "laura-flanders-show"
+      },
+      {
+        "name": "The World Party",
+        "description": "",
+        "start": "19:00",
+        "end": "20:00",
+        "start_display": "7:00 pm",
+        "end_display": "8:00 pm",
+        "url": "",
+        "program_slug": "world-party"
+      },
+      {
+        "name": "The Ear Opener",
+        "description": "Mostly new music, mostly close to post-punk, indie rock, worldbeat music. Occasional guests.",
+        "start": "20:00",
+        "end": "21:00",
+        "start_display": "8:00 pm",
+        "end_display": "9:00 pm",
+        "url": "",
+        "program_slug": "ear-opener"
+      },
+      {
+        "name": "Progressive Grind",
+        "description": "",
+        "start": "21:00",
+        "end": "22:00",
+        "start_display": "9:00 pm",
+        "end_display": "10:00 pm",
+        "url": "",
+        "program_slug": "progressive-grind-0"
+      },
+      {
+        "name": "Digital Dave's Live Music Archive",
+        "description": "",
+        "start": "22:00",
+        "end": "00:00",
+        "start_display": "10:00 pm",
+        "end_display": "12:00 am",
+        "url": "",
+        "program_slug": "digital-daves-live-music-archive"
+      }
+    ],
+    "WED": [
+      {
+        "name": "The Ear Opener",
+        "description": "",
+        "start": "00:00",
+        "end": "01:00",
+        "start_display": "12:00 am",
+        "end_display": "1:00 am",
+        "url": "",
+        "program_slug": "ear-opener"
+      },
+      {
+        "name": "World Party",
+        "description": "",
+        "start": "01:00",
+        "end": "02:00",
+        "start_display": "1:00 am",
+        "end_display": "2:00 am",
+        "url": "",
+        "program_slug": "world-party"
+      },
+      {
+        "name": "Progressive Grind",
+        "description": "",
+        "start": "02:00",
+        "end": "03:00",
+        "start_display": "2:00 am",
+        "end_display": "3:00 am",
+        "url": "",
+        "program_slug": "progressive-grind-0"
+      },
+      {
+        "name": "Night Plant",
+        "description": "",
+        "start": "03:00",
+        "end": "05:00",
+        "start_display": "3:00 am",
+        "end_display": "5:00 am",
+        "url": "",
+        "program_slug": "night-plant"
+      },
+      {
+        "name": "The Global Village with Chris Heim",
+        "description": "",
+        "start": "05:00",
+        "end": "06:00",
+        "start_display": "5:00 am",
+        "end_display": "6:00 am",
+        "url": "",
+        "program_slug": "global-village"
+      },
+      {
+        "name": "Morning Meditation",
+        "description": "Beginning Of Day",
+        "start": "06:00",
+        "end": "06:30",
+        "start_display": "6:00 am",
+        "end_display": "6:30 am",
+        "url": "",
+        "program_slug": ""
+      },
+      {
+        "name": "Informativo Pacifica",
+        "description": "Spanish Language News",
+        "start": "06:30",
+        "end": "07:00",
+        "start_display": "6:30 am",
+        "end_display": "7:00 am",
+        "url": "",
+        "program_slug": "informativo-pacifica"
+      },
+      {
+        "name": "YTS Classics",
+        "description": "",
+        "start": "07:00",
+        "end": "08:00",
+        "start_display": "7:00 am",
+        "end_display": "8:00 am",
+        "url": "",
+        "program_slug": "yts-classics-overnight"
+      },
+      {
+        "name": "DemocracyNow! Live",
+        "description": "",
+        "start": "08:00",
+        "end": "09:00",
+        "start_display": "8:00 am",
+        "end_display": "9:00 am",
+        "url": "",
+        "program_slug": "democracy-now"
+      },
+      {
+        "name": "Bradcast",
+        "description": "",
+        "start": "09:00",
+        "end": "10:00",
+        "start_display": "9:00 am",
+        "end_display": "10:00 am",
+        "url": "",
+        "program_slug": "bradcast"
+      },
+      {
+        "name": "Alternative Radio",
+        "description": "",
+        "start": "10:00",
+        "end": "11:00",
+        "start_display": "10:00 am",
+        "end_display": "11:00 am",
+        "url": "",
+        "program_slug": "alternative-radio"
+      },
+      {
+        "name": "Rising Up with Sonali",
+        "description": "",
+        "start": "11:00",
+        "end": "12:00",
+        "start_display": "11:00 am",
+        "end_display": "12:00 pm",
+        "url": "",
+        "program_slug": "rising-up"
+      },
+      {
+        "name": "Old Time Radio",
+        "description": "",
+        "start": "12:00",
+        "end": "15:00",
+        "start_display": "12:00 pm",
+        "end_display": "3:00 pm",
+        "url": "",
+        "program_slug": ""
+      },
+      {
+        "name": "Project Censored",
+        "description": "",
+        "start": "15:00",
+        "end": "16:00",
+        "start_display": "3:00 pm",
+        "end_display": "4:00 pm",
+        "url": "",
+        "program_slug": "project-censored"
+      },
+      {
+        "name": "Conscious Voices",
+        "description": "",
+        "start": "16:00",
+        "end": "17:00",
+        "start_display": "4:00 pm",
+        "end_display": "5:00 pm",
+        "url": "",
+        "program_slug": "conscious-voices"
+      },
+      {
+        "name": "Democracy Now PM",
+        "description": "",
+        "start": "17:00",
+        "end": "18:00",
+        "start_display": "5:00 pm",
+        "end_display": "6:00 pm",
+        "url": "",
+        "program_slug": "democracy-now"
+      },
+      {
+        "name": "Hard Knock Radio",
+        "description": "",
+        "start": "18:00",
+        "end": "19:00",
+        "start_display": "6:00 pm",
+        "end_display": "7:00 pm",
+        "url": "",
+        "program_slug": "hard-knock-radio"
+      },
+      {
+        "name": "Wes Flexner's Rock and Roll Show",
+        "description": "",
+        "start": "19:00",
+        "end": "20:00",
+        "start_display": "7:00 pm",
+        "end_display": "8:00 pm",
+        "url": "",
+        "program_slug": "wes-flexners-rock-n-roll-show"
+      },
+      {
+        "name": "Stack Flippin",
+        "description": "",
+        "start": "20:00",
+        "end": "21:00",
+        "start_display": "8:00 pm",
+        "end_display": "9:00 pm",
+        "url": "",
+        "program_slug": ""
+      },
+      {
+        "name": "The Bus Bass Show",
+        "description": "",
+        "start": "21:00",
+        "end": "22:00",
+        "start_display": "9:00 pm",
+        "end_display": "10:00 pm",
+        "url": "",
+        "program_slug": "bus-bass-show"
+      },
+      {
+        "name": "Future Sabotage",
+        "description": "",
+        "start": "22:00",
+        "end": "23:00",
+        "start_display": "10:00 pm",
+        "end_display": "11:00 pm",
+        "url": "",
+        "program_slug": "future-sabotage"
+      },
+      {
+        "name": "Human Interviews",
+        "description": "The interviewees are of different age, place, race, background, religion, belief, and experience \u2013 all answering the same existential questions about self, time, love, death, perception, and other things that bring wonder to me. Mostly unanswerable things.\r\n\r\nWhen aired on the radio, the interviews include a favorite song or two of the participants or mine. The purpose of the project is not to find answers, but to ask the questions and to share other people\u2019s perspectives since I believe listening to different ideas and imagining new ways of being is important for humanity.",
+        "start": "23:00",
+        "end": "00:00",
+        "start_display": "11:00 pm",
+        "end_display": "12:00 am",
+        "url": "",
+        "program_slug": "human-interviews"
+      }
+    ],
+    "THU": [
+      {
+        "name": "MAXIMUMROCKNROLL",
+        "description": "",
+        "start": "00:00",
+        "end": "01:00",
+        "start_display": "12:00 am",
+        "end_display": "1:00 am",
+        "url": "",
+        "program_slug": "maximum-rock-and-roll"
+      },
+      {
+        "name": "The Beat Oracle",
+        "description": "",
+        "start": "01:00",
+        "end": "03:00",
+        "start_display": "1:00 am",
+        "end_display": "3:00 am",
+        "url": "",
+        "program_slug": "beat-oracle"
+      },
+      {
+        "name": "Human Interviews",
+        "description": "",
+        "start": "03:00",
+        "end": "04:00",
+        "start_display": "3:00 am",
+        "end_display": "4:00 am",
+        "url": "",
+        "program_slug": "human-interviews"
+      },
+      {
+        "name": "Wes Flexner's Rock and Roll Show",
+        "description": "",
+        "start": "04:00",
+        "end": "05:00",
+        "start_display": "4:00 am",
+        "end_display": "5:00 am",
+        "url": "",
+        "program_slug": "wes-flexners-rock-n-roll-show"
+      },
+      {
+        "name": "The Global Village with Chris Heim",
+        "description": "",
+        "start": "05:00",
+        "end": "06:00",
+        "start_display": "5:00 am",
+        "end_display": "6:00 am",
+        "url": "",
+        "program_slug": "global-village"
+      },
+      {
+        "name": "Morning Meditation",
+        "description": "Beginning Of Day",
+        "start": "06:00",
+        "end": "06:30",
+        "start_display": "6:00 am",
+        "end_display": "6:30 am",
+        "url": "",
+        "program_slug": ""
+      },
+      {
+        "name": "Informativo Pacifica",
+        "description": "Spanish Language News",
+        "start": "06:30",
+        "end": "07:00",
+        "start_display": "6:30 am",
+        "end_display": "7:00 am",
+        "url": "",
+        "program_slug": "informativo-pacifica"
+      },
+      {
+        "name": "YTS Classics",
+        "description": "",
+        "start": "07:00",
+        "end": "08:00",
+        "start_display": "7:00 am",
+        "end_display": "8:00 am",
+        "url": "",
+        "program_slug": "yts-classics-overnight"
+      },
+      {
+        "name": "DemocracyNow! Live",
+        "description": "",
+        "start": "08:00",
+        "end": "09:00",
+        "start_display": "8:00 am",
+        "end_display": "9:00 am",
+        "url": "",
+        "program_slug": "democracy-now"
+      },
+      {
+        "name": "Bradcast",
+        "description": "",
+        "start": "09:00",
+        "end": "10:00",
+        "start_display": "9:00 am",
+        "end_display": "10:00 am",
+        "url": "",
+        "program_slug": "bradcast"
+      },
+      {
+        "name": "Writer's Voice",
+        "description": "",
+        "start": "10:00",
+        "end": "11:00",
+        "start_display": "10:00 am",
+        "end_display": "11:00 am",
+        "url": "",
+        "program_slug": "writers-voice"
+      },
+      {
+        "name": "Capitalism Race & Democracy",
+        "description": "",
+        "start": "11:00",
+        "end": "12:00",
+        "start_display": "11:00 am",
+        "end_display": "12:00 pm",
+        "url": "",
+        "program_slug": "capitalism-race-democracy"
+      },
+      {
+        "name": "Old Time Radio",
+        "description": "",
+        "start": "12:00",
+        "end": "15:00",
+        "start_display": "12:00 pm",
+        "end_display": "3:00 pm",
+        "url": "",
+        "program_slug": ""
+      },
+      {
+        "name": "Best of the Attitude",
+        "description": "",
+        "start": "15:00",
+        "end": "16:00",
+        "start_display": "3:00 pm",
+        "end_display": "4:00 pm",
+        "url": "",
+        "program_slug": "best-of-attitude"
+      },
+      {
+        "name": "Kite Line Radio",
+        "description": "",
+        "start": "16:00",
+        "end": "16:30",
+        "start_display": "4:00 pm",
+        "end_display": "4:30 pm",
+        "url": "",
+        "program_slug": "kite-line-radio"
+      },
+      {
+        "name": "IRL Podcast",
+        "description": "",
+        "start": "16:30",
+        "end": "17:00",
+        "start_display": "4:30 pm",
+        "end_display": "5:00 pm",
+        "url": "",
+        "program_slug": "irl-podcast"
+      },
+      {
+        "name": "Democracy Now PM",
+        "description": "",
+        "start": "17:00",
+        "end": "18:00",
+        "start_display": "5:00 pm",
+        "end_display": "6:00 pm",
+        "url": "",
+        "program_slug": "democracy-now"
+      },
+      {
+        "name": "Columbus Desi Radio",
+        "description": "",
+        "start": "18:00",
+        "end": "19:00",
+        "start_display": "6:00 pm",
+        "end_display": "7:00 pm",
+        "url": "",
+        "program_slug": "columbus-desi-radio"
+      },
+      {
+        "name": "BSA",
+        "description": "Hip Hop music in the purest form of liking your music, drawings, dancing, choice of music, style, clothes and politics.",
+        "start": "19:00",
+        "end": "20:00",
+        "start_display": "7:00 pm",
+        "end_display": "8:00 pm",
+        "url": "",
+        "program_slug": ""
+      },
+      {
+        "name": "Crazy Momma's Radio",
+        "description": "",
+        "start": "20:00",
+        "end": "21:00",
+        "start_display": "8:00 pm",
+        "end_display": "9:00 pm",
+        "url": "",
+        "program_slug": "crazy-mamas-radio"
+      },
+      {
+        "name": "Reelin' In The Years",
+        "description": "",
+        "start": "21:00",
+        "end": "23:00",
+        "start_display": "9:00 pm",
+        "end_display": "11:00 pm",
+        "url": "",
+        "program_slug": "reelin-in-the-years"
+      },
+      {
+        "name": "Fat Beard",
+        "description": "",
+        "start": "23:00",
+        "end": "00:00",
+        "start_display": "11:00 pm",
+        "end_display": "12:00 am",
+        "url": "",
+        "program_slug": "thefatbeardradioprogramme"
+      }
+    ],
+    "FRI": [
+      {
+        "name": "BSA",
+        "description": "",
+        "start": "00:00",
+        "end": "01:00",
+        "start_display": "12:00 am",
+        "end_display": "1:00 am",
+        "url": "",
+        "program_slug": ""
+      },
+      {
+        "name": "Crazy Mama's Radio Hour",
+        "description": "",
+        "start": "01:00",
+        "end": "02:00",
+        "start_display": "1:00 am",
+        "end_display": "2:00 am",
+        "url": "",
+        "program_slug": "crazy-mamas-radio"
+      },
+      {
+        "name": "Reelin' In The Years",
+        "description": "",
+        "start": "02:00",
+        "end": "04:00",
+        "start_display": "2:00 am",
+        "end_display": "4:00 am",
+        "url": "",
+        "program_slug": "reelin-in-the-years"
+      },
+      {
+        "name": "Fat Beard",
+        "description": "",
+        "start": "04:00",
+        "end": "05:00",
+        "start_display": "4:00 am",
+        "end_display": "5:00 am",
+        "url": "",
+        "program_slug": "thefatbeardradioprogramme"
+      },
+      {
+        "name": "The Global Village with Chris Heim",
+        "description": "",
+        "start": "05:00",
+        "end": "06:00",
+        "start_display": "5:00 am",
+        "end_display": "6:00 am",
+        "url": "",
+        "program_slug": "global-village"
+      },
+      {
+        "name": "Morning Meditation",
+        "description": "Beginning Of Day",
+        "start": "06:00",
+        "end": "06:30",
+        "start_display": "6:00 am",
+        "end_display": "6:30 am",
+        "url": "",
+        "program_slug": ""
+      },
+      {
+        "name": "Informativo Pacifica",
+        "description": "Spanish Language News",
+        "start": "06:30",
+        "end": "07:00",
+        "start_display": "6:30 am",
+        "end_display": "7:00 am",
+        "url": "",
+        "program_slug": "informativo-pacifica"
+      },
+      {
+        "name": "YTS Classics",
+        "description": "",
+        "start": "07:00",
+        "end": "08:00",
+        "start_display": "7:00 am",
+        "end_display": "8:00 am",
+        "url": "",
+        "program_slug": "yts-classics-overnight"
+      },
+      {
+        "name": "DemocracyNow! Live",
+        "description": "",
+        "start": "08:00",
+        "end": "09:00",
+        "start_display": "8:00 am",
+        "end_display": "9:00 am",
+        "url": "",
+        "program_slug": "democracy-now"
+      },
+      {
+        "name": "Bradcast",
+        "description": "",
+        "start": "09:00",
+        "end": "10:00",
+        "start_display": "9:00 am",
+        "end_display": "10:00 am",
+        "url": "",
+        "program_slug": "bradcast"
+      },
+      {
+        "name": "Scholar's Circle",
+        "description": "",
+        "start": "10:00",
+        "end": "11:00",
+        "start_display": "10:00 am",
+        "end_display": "11:00 am",
+        "url": "",
+        "program_slug": "scholars-circle"
+      },
+      {
+        "name": "LeShow",
+        "description": "http://broadcast.wcrsfm.org/showbuilder#podcasts",
+        "start": "11:00",
+        "end": "12:00",
+        "start_display": "11:00 am",
+        "end_display": "12:00 pm",
+        "url": "",
+        "program_slug": "leshow"
+      },
+      {
+        "name": "Old Time Radio",
+        "description": "",
+        "start": "12:00",
+        "end": "15:00",
+        "start_display": "12:00 pm",
+        "end_display": "3:00 pm",
+        "url": "",
+        "program_slug": ""
+      },
+      {
+        "name": "On The Ground",
+        "description": "",
+        "start": "15:00",
+        "end": "16:00",
+        "start_display": "3:00 pm",
+        "end_display": "4:00 pm",
+        "url": "",
+        "program_slug": "on-the-ground"
+      },
+      {
+        "name": "Conscious Voices",
+        "description": "",
+        "start": "16:00",
+        "end": "17:00",
+        "start_display": "4:00 pm",
+        "end_display": "5:00 pm",
+        "url": "",
+        "program_slug": "conscious-voices"
+      },
+      {
+        "name": "Democracy Now PM",
+        "description": "",
+        "start": "17:00",
+        "end": "18:00",
+        "start_display": "5:00 pm",
+        "end_display": "6:00 pm",
+        "url": "",
+        "program_slug": "democracy-now"
+      },
+      {
+        "name": "Hard Knock Radio",
+        "description": "",
+        "start": "18:00",
+        "end": "19:00",
+        "start_display": "6:00 pm",
+        "end_display": "7:00 pm",
+        "url": "",
+        "program_slug": "hard-knock-radio"
+      },
+      {
+        "name": "The Burn Notice",
+        "description": "",
+        "start": "19:00",
+        "end": "20:00",
+        "start_display": "7:00 pm",
+        "end_display": "8:00 pm",
+        "url": "",
+        "program_slug": "burn-notice"
+      },
+      {
+        "name": "Steam Room",
+        "description": "",
+        "start": "20:00",
+        "end": "21:00",
+        "start_display": "8:00 pm",
+        "end_display": "9:00 pm",
+        "url": "",
+        "program_slug": "steam-room"
+      },
+      {
+        "name": "Cultural Popcorn",
+        "description": "",
+        "start": "21:00",
+        "end": "23:00",
+        "start_display": "9:00 pm",
+        "end_display": "11:00 pm",
+        "url": "",
+        "program_slug": "cultural-popcorn"
+      },
+      {
+        "name": "CCSH",
+        "description": "",
+        "start": "23:00",
+        "end": "01:00",
+        "start_display": "11:00 pm",
+        "end_display": "1:00 am",
+        "url": "",
+        "program_slug": ""
+      }
+    ],
+    "SAT": [
+      {
+        "name": "The Steam Room",
+        "description": "",
+        "start": "01:00",
+        "end": "02:00",
+        "start_display": "1:00 am",
+        "end_display": "2:00 am",
+        "url": "",
+        "program_slug": "steam-room"
+      },
+      {
+        "name": "WCRS Overnight",
+        "description": "",
+        "start": "02:00",
+        "end": "04:00",
+        "start_display": "2:00 am",
+        "end_display": "4:00 am",
+        "url": "",
+        "program_slug": "wcrs-overnight"
+      },
+      {
+        "name": "Cultural Popcorn",
+        "description": "",
+        "start": "04:00",
+        "end": "06:00",
+        "start_display": "4:00 am",
+        "end_display": "6:00 am",
+        "url": "",
+        "program_slug": "cultural-popcorn"
+      },
+      {
+        "name": "Supermex and co.",
+        "description": "",
+        "start": "06:00",
+        "end": "11:00",
+        "start_display": "6:00 am",
+        "end_display": "11:00 am",
+        "url": "",
+        "program_slug": "latino-music-dj-supermex"
+      },
+      {
+        "name": "The Electric Age with John Horan",
+        "description": "",
+        "start": "11:00",
+        "end": "13:00",
+        "start_display": "11:00 am",
+        "end_display": "1:00 pm",
+        "url": "",
+        "program_slug": "electric-age-john-horan"
+      },
+      {
+        "name": "It's All Happening",
+        "description": "",
+        "start": "13:00",
+        "end": "14:00",
+        "start_display": "1:00 pm",
+        "end_display": "2:00 pm",
+        "url": "",
+        "program_slug": "its-all-happening"
+      },
+      {
+        "name": "Yesterday's Wine",
+        "description": "Classic country and western music.",
+        "start": "14:00",
+        "end": "15:00",
+        "start_display": "2:00 pm",
+        "end_display": "3:00 pm",
+        "url": "",
+        "program_slug": "yesterdays-wine"
+      },
+      {
+        "name": "Twangtacular",
+        "description": "Genuine country, bluegrass and Americana.",
+        "start": "15:00",
+        "end": "16:00",
+        "start_display": "3:00 pm",
+        "end_display": "4:00 pm",
+        "url": "",
+        "program_slug": "twangtacular"
+      },
+      {
+        "name": "Afropop Worldwide",
+        "description": "",
+        "start": "16:00",
+        "end": "17:00",
+        "start_display": "4:00 pm",
+        "end_display": "5:00 pm",
+        "url": "",
+        "program_slug": "afropop-worldwide"
+      },
+      {
+        "name": "Indigenous in Music",
+        "description": "",
+        "start": "17:00",
+        "end": "18:00",
+        "start_display": "5:00 pm",
+        "end_display": "6:00 pm",
+        "url": "",
+        "program_slug": "indigenous-in-music"
+      },
+      {
+        "name": "The Global Village with Chris Heim",
+        "description": "",
+        "start": "18:00",
+        "end": "19:00",
+        "start_display": "6:00 pm",
+        "end_display": "7:00 pm",
+        "url": "",
+        "program_slug": "global-village"
+      },
+      {
+        "name": "beaTreats",
+        "description": "synth pop dance ambient",
+        "start": "19:00",
+        "end": "20:00",
+        "start_display": "7:00 pm",
+        "end_display": "8:00 pm",
+        "url": "",
+        "program_slug": "beatreats"
+      },
+      {
+        "name": "Non-Stop w/DJ Crucifader and Friends",
+        "description": "",
+        "start": "20:00",
+        "end": "22:00",
+        "start_display": "8:00 pm",
+        "end_display": "10:00 pm",
+        "url": "",
+        "program_slug": "non-stop-wdj-crucifader-and-friends"
+      },
+      {
+        "name": "The 9th Column",
+        "description": "",
+        "start": "22:00",
+        "end": "23:00",
+        "start_display": "10:00 pm",
+        "end_display": "11:00 pm",
+        "url": "",
+        "program_slug": "9th-column"
+      },
+      {
+        "name": "The Curfew",
+        "description": "",
+        "start": "23:00",
+        "end": "00:00",
+        "start_display": "11:00 pm",
+        "end_display": "12:00 am",
+        "url": "",
+        "program_slug": ""
+      }
+    ],
+    "SUN": [
+      {
+        "name": "Big Barking Dog Radio",
+        "description": "",
+        "start": "00:00",
+        "end": "00:30",
+        "start_display": "12:00 am",
+        "end_display": "12:30 am",
+        "url": "",
+        "program_slug": "big-barking-dog-radio"
+      },
+      {
+        "name": "Shortwave report",
+        "description": "",
+        "start": "00:30",
+        "end": "01:00",
+        "start_display": "12:30 am",
+        "end_display": "1:00 am",
+        "url": "",
+        "program_slug": "shortwave-report"
+      },
+      {
+        "name": "Saturday Sounds (rerun)",
+        "description": "",
+        "start": "01:00",
+        "end": "03:00",
+        "start_display": "1:00 am",
+        "end_display": "3:00 am",
+        "url": "",
+        "program_slug": ""
+      },
+      {
+        "name": "Yesterday's Wine",
+        "description": "",
+        "start": "03:00",
+        "end": "04:00",
+        "start_display": "3:00 am",
+        "end_display": "4:00 am",
+        "url": "",
+        "program_slug": "yesterdays-wine"
+      },
+      {
+        "name": "Twangtacular",
+        "description": "",
+        "start": "04:00",
+        "end": "05:00",
+        "start_display": "4:00 am",
+        "end_display": "5:00 am",
+        "url": "",
+        "program_slug": "twangtacular"
+      },
+      {
+        "name": "BeaTreats",
+        "description": "",
+        "start": "05:00",
+        "end": "06:00",
+        "start_display": "5:00 am",
+        "end_display": "6:00 am",
+        "url": "",
+        "program_slug": "beatreats"
+      },
+      {
+        "name": "Supermex and co.",
+        "description": "",
+        "start": "06:00",
+        "end": "12:00",
+        "start_display": "6:00 am",
+        "end_display": "12:00 pm",
+        "url": "",
+        "program_slug": "latino-music-dj-supermex"
+      },
+      {
+        "name": "rekloos presents: BASS KULTURE",
+        "description": "Sundays at noon. From the early jamaican sounds to today\u2019s contemporary ska, reggae, dub, dancehall, bass music. Listen to archived shows at Rekloos\u2019 Mixcloud.",
+        "start": "12:00",
+        "end": "13:00",
+        "start_display": "12:00 pm",
+        "end_display": "1:00 pm",
+        "url": "",
+        "program_slug": "rekloos-presents-bass-kulture"
+      },
+      {
+        "name": "Dawg Day Radio / Local Love",
+        "description": "",
+        "start": "13:00",
+        "end": "15:00",
+        "start_display": "1:00 pm",
+        "end_display": "3:00 pm",
+        "url": "",
+        "program_slug": "dawg-day-radio"
+      },
+      {
+        "name": "Recess Radio",
+        "description": "",
+        "start": "15:00",
+        "end": "16:00",
+        "start_display": "3:00 pm",
+        "end_display": "4:00 pm",
+        "url": "",
+        "program_slug": "recess-radio"
+      },
+      {
+        "name": "New Tunes for Old Cats",
+        "description": "",
+        "start": "16:00",
+        "end": "17:00",
+        "start_display": "4:00 pm",
+        "end_display": "5:00 pm",
+        "url": "",
+        "program_slug": "new-tunes-old-cats"
+      },
+      {
+        "name": "Bottom Up Show",
+        "description": "",
+        "start": "17:00",
+        "end": "18:00",
+        "start_display": "5:00 pm",
+        "end_display": "6:00 pm",
+        "url": "",
+        "program_slug": ""
+      },
+      {
+        "name": "Turn It Up",
+        "description": "",
+        "start": "18:00",
+        "end": "20:00",
+        "start_display": "6:00 pm",
+        "end_display": "8:00 pm",
+        "url": "https://wcrsfm.org/programs/turn-it",
+        "program_slug": "turn-it"
+      },
+      {
+        "name": "My Favorite Things",
+        "description": "",
+        "start": "20:00",
+        "end": "21:00",
+        "start_display": "8:00 pm",
+        "end_display": "9:00 pm",
+        "url": "",
+        "program_slug": "my-favorite-things"
+      },
+      {
+        "name": "Bob's Basement Jazz Hour 1",
+        "description": "Description coming soon",
+        "start": "21:00",
+        "end": "22:00",
+        "start_display": "9:00 pm",
+        "end_display": "10:00 pm",
+        "url": "",
+        "program_slug": "bobs-basement-jazz"
+      },
+      {
+        "name": "Bob's Basement Jazz Hour 2",
+        "description": "Description coming soon",
+        "start": "22:00",
+        "end": "23:00",
+        "start_display": "10:00 pm",
+        "end_display": "11:00 pm",
+        "url": "",
+        "program_slug": "bobs-basement-jazz"
+      },
+      {
+        "name": "The Final Straw",
+        "description": "",
+        "start": "23:00",
+        "end": "00:00",
+        "start_display": "11:00 pm",
+        "end_display": "12:00 am",
+        "url": "",
+        "program_slug": "final-straw"
+      }
+    ]
+  }
+}

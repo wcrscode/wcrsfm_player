@@ -1,0 +1,66 @@
+---
+layout: default
+title: Program Schedule
+permalink: /schedule/
+---
+<h1>Program Schedule</h1>
+<p>Click a day to see what's airing. Today is highlighted on load.</p>
+
+{% assign days_order = "SUN,MON,TUE,WED,THU,FRI,SAT" | split: "," %}
+{% assign day_full = "Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday" | split: "," %}
+
+<div class="schedule" data-schedule>
+  <div class="schedule-tabs" role="tablist">
+    {% for d in days_order %}
+    <button type="button" role="tab"
+            id="tab-{{ d }}"
+            aria-controls="panel-{{ d }}"
+            aria-selected="false"
+            tabindex="-1"
+            class="schedule-tab"
+            data-day-tab="{{ d }}">
+      <span class="schedule-tab-short">{{ d }}</span>
+      <span class="schedule-tab-long">{{ day_full[forloop.index0] }}</span>
+    </button>
+    {% endfor %}
+  </div>
+
+  {% for d in days_order %}
+  <section role="tabpanel"
+           id="panel-{{ d }}"
+           aria-labelledby="tab-{{ d }}"
+           class="schedule-panel"
+           data-day-panel="{{ d }}"
+           hidden>
+    <h2 class="schedule-panel-heading">{{ day_full[forloop.index0] }}</h2>
+    {% assign shows = site.data.schedule.days[d] %}
+    {% if shows.size > 0 %}
+    <ol class="schedule-list">
+      {% for show in shows %}
+      <li class="schedule-show">
+        <span class="show-time">{{ show.start_display }}<span class="show-time-end"> – {{ show.end_display }}</span></span>
+        <span class="show-name">
+          {%- assign program = site.programs | where: "slug", show.program_slug | first -%}
+          {%- if program and program.type == "syndicated" and program.more_info != "" -%}
+            <a href="{{ program.more_info }}" target="_blank" rel="noopener">{{ show.name }}</a>
+          {%- elsif show.program_slug and show.program_slug != "" -%}
+            <a href="{{ '/programs/' | append: show.program_slug | append: '/' | relative_url }}">{{ show.name }}</a>
+          {%- elsif show.url != "" -%}
+            <a href="{{ show.url }}" target="_blank" rel="noopener">{{ show.name }}</a>
+          {%- else -%}
+            {{ show.name }}
+          {%- endif -%}
+        </span>
+      </li>
+      {% endfor %}
+    </ol>
+    {% else %}
+    <p class="schedule-empty">No programs scheduled.</p>
+    {% endif %}
+  </section>
+  {% endfor %}
+</div>
+
+{% if site.data.schedule.fetched_at %}
+<p class="schedule-meta">Schedule last fetched {{ site.data.schedule.fetched_at | date: "%B %-d, %Y" }}.</p>
+{% endif %}

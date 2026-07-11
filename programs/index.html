@@ -1,0 +1,19 @@
+---
+layout: default
+title: Programs
+permalink: /programs/
+---
+<h1>Programs</h1>
+<p>All of our current programs, including locally-produced and syndicated shows.</p>
+
+{% assign programs = site.programs | default: empty_array | sort: "title" %}
+<ul class="program-list">
+  {% for prog in programs %}
+  <li class="program-item">
+    <h3 class="program-title"><a href="{{ prog.url | relative_url }}">{{ prog.title }}</a></h3>
+    {% if prog.quick_description %}
+    <p class="program-quick">{{ prog.quick_description }}</p>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>

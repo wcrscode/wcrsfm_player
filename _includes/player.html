@@ -1,0 +1,11 @@
+<div id="player" role="region" aria-label="Radio player">
+  <button id="toggle" aria-label="Play" type="button">
+    <svg id="icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+    <svg id="icon-pause" viewBox="0 0 24 24" aria-hidden="true" style="display:none"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+  </button>
+  <div id="info">
+    <div id="station"><a href="https://archive.radio614.org:8001/" target="_blank" rel="noopener">Live Stream</a></div>
+    <div id="nowplaying" aria-live="polite" aria-atomic="true">—</div>
+  </div>
+  <audio id="audio" preload="none" crossorigin="anonymous"></audio>
+</div>

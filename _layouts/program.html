@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<article class="program">
+  <h1>{{ page.title }}</h1>
+
+  {% if page.quick_description %}
+  <p class="program-quick">{{ page.quick_description }}</p>
+  {% endif %}
+
+  <dl class="program-meta">
+    {% if page.genre %}
+    <dt>Genre</dt><dd>{{ page.genre }}</dd>
+    {% endif %}
+    {% if page.more_info and page.more_info != "" %}
+    <dt>More info</dt><dd><a href="{{ page.more_info }}" target="_blank" rel="noopener">{{ page.more_info }}</a></dd>
+    {% endif %}
+    {% if page.djs and page.djs.size > 0 %}
+    <dt>{% if page.djs.size == 1 %}DJ{% else %}DJs{% endif %}</dt>
+    <dd>{{ page.djs | join: ", " }}</dd>
+    {% endif %}
+  </dl>
+
+  {% if content and content != "" %}
+  <div class="program-body">
+    {{ content }}
+  </div>
+  {% endif %}
+
+  <p class="program-schedule-link">
+    See when this show airs on the <a href="{{ '/schedule/' | relative_url }}">program schedule</a>.
+  </p>
+</article>

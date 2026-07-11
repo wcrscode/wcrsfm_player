@@ -1,0 +1,28 @@
+title: WCRS FM
+description: Streaming community radio.
+url: ""
+baseurl: ""
+
+markdown: kramdown
+plugins: []
+
+collections:
+  articles:
+    output: true
+    permalink: /news/:path/
+  programs:
+    output: true
+    permalink: /programs/:path/
+
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .ddev
+  - README.md
+  - node_modules
+  - mail_config.php
+  - composer.json
+  - composer.lock
+  - data

@@ -1,0 +1,50 @@
+---
+layout: default
+---
+<h1>WCRS-LP Columbus Community Radio</h1>
+<p>WCRS-LP FM is a non-commercial, listener-supported community radio station serving Central Ohioans, providing quality programming not heard anywhere else on the radio dial in Columbus.</p>
+
+<section id="todays-schedule" data-upcoming-schedule>
+  <h2>On Air</h2>
+  <div class="upcoming-strip" data-upcoming-list role="list" aria-label="Now and upcoming shows"></div>
+  <script type="application/json" data-upcoming-data>{{ site.data.schedule.days | jsonify }}</script>
+  <p class="news-more"><a href="{{ '/schedule/' | relative_url }}">Full program schedule &rarr;</a></p>
+</section>
+
+<section id="station-news">
+  <h2>News</h2>
+  {% assign news = site.articles | where_exp: "a", "a.categories contains 'station-news'" | sort: "order" %}
+  <ul class="news-summary">
+    {% for item in news limit:3 %}
+    <li>
+      <h3 class="news-title"><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
+      {% if item.date and item.date != "" %}<p class="news-date">{{ item.date | date: "%B %-d, %Y" }}</p>{% endif %}
+      <p class="news-excerpt">{{ item.excerpt }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+  <p class="news-more"><a href="{{ '/news/' | relative_url }}">All Station News &rarr;</a></p>
+</section>
+
+<section id="recent-shows">
+  <h2>Recent Music Programs</h2>
+  <ul class="show-list">
+    {% for show in site.data.shows limit:10 %}
+    <li class="show">
+      {% if show.image %}
+      <a href="{{ show.url }}" class="show-image" target="_blank" rel="noopener">
+        <img src="{{ show.image | relative_url }}" alt="{{ show.name | escape }}" loading="lazy">
+      </a>
+      {% endif %}
+      <div class="show-body">
+        <h3 class="show-title"><a href="{{ show.url }}" target="_blank" rel="noopener">{{ show.name | escape }}</a></h3>
+        {% assign desc = show.description | strip_html | strip %}
+        {% if desc != "" %}
+        <p class="show-desc">{{ desc | truncate: 280 }}</p>
+        {% endif %}
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+  <p class="news-more"><a href="{{ '/archives/' | relative_url }}">All Music Archives &rarr;</a></p>
+</section>

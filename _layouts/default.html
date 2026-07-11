@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css?family=Arimo:400,700&subset=latin" rel="stylesheet">
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to main content</a>
+
+<header id="site-header">
+  <a class="site-brand" href="{{ '/' | relative_url }}">
+    <img src="{{ '/assets/img/logo.png' | relative_url }}" alt="WCRS FM" class="site-logo">
+  </a>
+  <button id="nav-toggle" class="nav-toggle" type="button"
+          aria-label="Menu" aria-expanded="false" aria-controls="site-nav">
+    <span class="nav-toggle-bars" aria-hidden="true"></span>
+  </button>
+  <nav id="site-nav" class="site-nav" aria-label="Primary">
+    {% assign here = page.url %}
+    {% if here == '/index.html' %}{% assign here = '/' %}{% endif %}
+    <ul>
+      {% for item in site.data.nav %}
+      <li>
+        <a href="{{ item.url | relative_url }}"
+           {% if here == item.url %}aria-current="page"{% endif %}>
+          {{ item.title }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>
+
+<main id="content">
+{{ content }}
+</main>
+
+{% include player.html %}
+
+<script src="{{ '/assets/js/player.js' | relative_url }}"></script>
+</body>
+</html>
