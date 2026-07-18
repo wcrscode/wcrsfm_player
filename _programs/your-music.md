@@ -2,6 +2,7 @@
 layout: program
 title: "Your Music"
 slug: "your-music"
+air_time: "Mondays, 9 p.m."
 type: "local"
 more_info: "http://yourmusicwcrs.blogspot.com"
 source_url: "https://www.wcrsfm.org/node/900"

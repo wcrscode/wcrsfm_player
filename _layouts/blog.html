@@ -6,19 +6,38 @@ layout: default
 
 {% assign items = site.articles | where_exp: "a", "a.categories contains page.category" | sort: "order" %}
 
-<ul class="news-list">
-{% for item in items %}
-  <li class="news-item">
-    {% if item.image %}
-    <a class="news-thumb" href="{{ item.url | relative_url }}">
-      <img src="{{ item.image | relative_url }}" alt="" loading="lazy">
+{% if items.size > 0 %}
+  {% assign lead = items.first %}
+  <article class="news-lead">
+    {% if lead.image %}
+    <a class="news-lead-thumb" href="{{ lead.url | relative_url }}">
+      <img src="{{ lead.image | relative_url }}" alt="" loading="lazy">
     </a>
     {% endif %}
-    <div class="news-body">
-      <h2 class="news-title"><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h2>
-      {% if item.date and item.date != "" %}<p class="news-date">{{ item.date | date: "%B %-d, %Y" }}</p>{% endif %}
-      <p class="news-excerpt">{{ item.excerpt }}</p>
+    <div class="news-lead-body">
+      <p class="news-lead-tag">Latest</p>
+      <h2 class="news-lead-title"><a href="{{ lead.url | relative_url }}">{{ lead.title }}</a></h2>
+      {% if lead.date and lead.date != "" %}<p class="news-date">{% if lead.date_approx %}{{ lead.date | date: "%B %Y" }} (approx.){% else %}{{ lead.date | date: "%B %-d, %Y" }}{% endif %}</p>{% endif %}
+      <p class="news-excerpt">{{ lead.excerpt }}</p>
     </div>
-  </li>
-{% endfor %}
-</ul>
+  </article>
+
+  {% if items.size > 1 %}
+  <ul class="news-list">
+    {% for item in items offset:1 %}
+    <li class="news-item">
+      {% if item.image %}
+      <a class="news-thumb" href="{{ item.url | relative_url }}">
+        <img src="{{ item.image | relative_url }}" alt="" loading="lazy">
+      </a>
+      {% endif %}
+      <div class="news-body">
+        <h2 class="news-title"><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h2>
+        {% if item.date and item.date != "" %}<p class="news-date">{% if item.date_approx %}{{ item.date | date: "%B %Y" }} (approx.){% else %}{{ item.date | date: "%B %-d, %Y" }}{% endif %}</p>{% endif %}
+        <p class="news-excerpt">{{ item.excerpt }}</p>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+{% endif %}

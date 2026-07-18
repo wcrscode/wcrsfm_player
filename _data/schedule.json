@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-08T11:14:53",
+  "fetched_at": "2026-07-12T17:17:44",
   "days": {
     "MON": [
       {
@@ -100,7 +100,7 @@
         "start_display": "10:00 am",
         "end_display": "11:00 am",
         "url": "",
-        "program_slug": "exporation"
+        "program_slug": "exploration"
       },
       {
         "name": "Making Contact",
@@ -288,9 +288,9 @@
         "name": "The Global Village with Chris Heim",
         "description": "",
         "start": "05:00",
-        "end": "05:04",
+        "end": "06:00",
         "start_display": "5:00 am",
-        "end_display": "5:04 am",
+        "end_display": "6:00 am",
         "url": "",
         "program_slug": "global-village"
       },
@@ -1131,14 +1131,14 @@
         "program_slug": "cultural-popcorn"
       },
       {
-        "name": "CCSH",
+        "name": "Conscious Champion Sound Hour",
         "description": "",
         "start": "23:00",
         "end": "01:00",
         "start_display": "11:00 pm",
         "end_display": "1:00 am",
         "url": "",
-        "program_slug": ""
+        "program_slug": "conscious-champion-sound-hour"
       }
     ],
     "SAT": [

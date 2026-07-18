@@ -1,6 +1,6 @@
 title: WCRS FM
 description: Streaming community radio.
-url: ""
+url: "https://wcrsfm.org"
 baseurl: ""
 
 markdown: kramdown
@@ -14,6 +14,9 @@ collections:
     output: true
     permalink: /programs/:path/
 
+
+include:
+  - .htaccess
 
 exclude:
   - Gemfile

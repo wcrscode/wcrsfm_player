@@ -2,6 +2,7 @@
 layout: program
 title: "World Party"
 slug: "world-party"
+air_time: "Tuesdays, 7 p.m."
 type: "local"
 more_info: "http://wcrsfm.org/programs/world-party"
 source_url: "https://www.wcrsfm.org/programs/world-party"

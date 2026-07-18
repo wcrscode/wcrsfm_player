@@ -2,6 +2,7 @@
 layout: program
 title: "Digital Dave's Live Music Archive"
 slug: "digital-daves-live-music-archive"
+air_time: "Tuesdays, 10 p.m."
 type: "local"
 more_info: ""
 source_url: "https://www.wcrsfm.org/programs/digital-daves-live-music-archive"

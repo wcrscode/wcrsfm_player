@@ -2,6 +2,7 @@
 layout: program
 title: "Turn It Up"
 slug: "turn-it"
+air_time: "Sundays, 6 p.m."
 type: "local"
 more_info: ""
 source_url: "https://www.wcrsfm.org/programs/turn-it"

@@ -2,6 +2,7 @@
 layout: program
 title: "Conscious Voices"
 slug: "conscious-voices"
+air_time: "Wednesdays and Fridays, 4 p.m."
 type: "local"
 more_info: ""
 source_url: "https://www.wcrsfm.org/node/896"

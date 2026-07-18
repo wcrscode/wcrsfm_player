@@ -12,3 +12,6 @@
   url: /archives/
 - title: Contact Us
   url: /about/#contact
+- title: Donate
+  url: https://www.zeffy.com/en-US/donation-form/donate-to-columbus-community-radio
+  external: true

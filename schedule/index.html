@@ -4,7 +4,7 @@ title: Program Schedule
 permalink: /schedule/
 ---
 <h1>Program Schedule</h1>
-<p>Click a day to see what's airing. Today is highlighted on load.</p>
+<p>Click a day to see what's airing.</p>
 
 {% assign days_order = "SUN,MON,TUE,WED,THU,FRI,SAT" | split: "," %}
 {% assign day_full = "Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday" | split: "," %}
@@ -40,13 +40,8 @@ permalink: /schedule/
       <li class="schedule-show">
         <span class="show-time">{{ show.start_display }}<span class="show-time-end"> – {{ show.end_display }}</span></span>
         <span class="show-name">
-          {%- assign program = site.programs | where: "slug", show.program_slug | first -%}
-          {%- if program and program.type == "syndicated" and program.more_info != "" -%}
-            <a href="{{ program.more_info }}" target="_blank" rel="noopener">{{ show.name }}</a>
-          {%- elsif show.program_slug and show.program_slug != "" -%}
+          {%- if show.program_slug and show.program_slug != "" -%}
             <a href="{{ '/programs/' | append: show.program_slug | append: '/' | relative_url }}">{{ show.name }}</a>
-          {%- elsif show.url != "" -%}
-            <a href="{{ show.url }}" target="_blank" rel="noopener">{{ show.name }}</a>
           {%- else -%}
             {{ show.name }}
           {%- endif -%}

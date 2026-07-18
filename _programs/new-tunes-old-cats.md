@@ -2,6 +2,7 @@
 layout: program
 title: "New Tunes for Old Cats"
 slug: "new-tunes-old-cats"
+air_time: "Sundays, 4 p.m."
 type: "local"
 more_info: ""
 source_url: "https://www.wcrsfm.org/programs/new-tunes-old-cats"

@@ -5,22 +5,26 @@ permalink: /about/
 ---
 # About Us
 
-## WCRS Needs You!
+<p class="about-intro">WCRS LP FM is Central Ohio's community radio station broadcasting on 92.7 and 98.3 FM in Franklin County. WCRS is a service of The Neighborhood Network and a Pacifica Affiliate airing Democracy Now!, and other syndicated public affairs programs in addition to locally made music, talk, and public affairs programs in English and Spanish.</p>
 
-As Columbus Community Station, We are people driven which in our case means we need people to drive this station. Right now we are looking for Volunteers. If you are interested in volunteering, or if you are interested in producing a program, fill out the "Contact Us" form below.
+<section class="about-panel about-panel-cta">
+  <h2>WCRS Needs You!</h2>
+  <p>As Columbus Community Station, we are people driven &mdash; which in our case means we need people to drive this station. Right now we are looking for volunteers. If you are interested in volunteering, or if you are interested in producing a program, drop us a line below.</p>
+  <p><a class="btn-accent" href="#contact">Contact us &rarr;</a></p>
+</section>
 
-WCRS LP FM is Central Ohio's community radio station broadcasting soon 24-7 on 92.7 and 98.3 FM in most of Franklin County. WCRS is a service of The Neighborhood Network and a Pacifica Affiliate airing Democracy Now!, and other syndicated public affairs programs in addition to locally made music, talk, and public affairs programs in English and Spanish.
-
-## Our Mission
-
-WCRS-LP FM is a non-commercial, listener-supported community radio station serving Central Ohioans, providing quality programming to:
-
-- Promote personal and civic responsibility, informed action and thoughtful living
-- Challenge cultural and intellectual assumptions
-- Celebrate local cultures
-- Air alternative points of view and facilitate understanding through dialogue
-- Provide media training and foster community empowerment and participation
-- Provide representation for under-served and under-represented constituencies and viewpoints, and provide news and information not commonly found elsewhere on the airwaves
+<section class="about-panel about-panel-mission">
+  <h2>Our Mission</h2>
+  <p>WCRS-LP FM is a non-commercial, listener-supported community radio station serving Central Ohioans, providing quality programming to:</p>
+  <ul class="mission-list">
+    <li>Promote personal and civic responsibility, informed action and thoughtful living</li>
+    <li>Challenge cultural and intellectual assumptions</li>
+    <li>Celebrate local cultures</li>
+    <li>Air alternative points of view and facilitate understanding through dialogue</li>
+    <li>Provide media training and foster community empowerment and participation</li>
+    <li>Provide representation for under-served and under-represented constituencies and viewpoints, and provide news and information not commonly found elsewhere on the airwaves</li>
+  </ul>
+</section>
 
 <section class="contact-section" id="contact">
   <h2>Contact Us</h2>

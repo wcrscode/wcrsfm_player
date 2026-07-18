@@ -2,6 +2,7 @@
 layout: program
 title: "The Ear Opener"
 slug: "ear-opener"
+air_time: "Tuesdays, 8 p.m."
 type: "local"
 more_info: "https://theearopener.org"
 quick_description: "Independent music and analysis"

@@ -2,6 +2,7 @@
 layout: program
 title: "Non-Stop w/DJ Crucifader and Friends"
 slug: "non-stop-wdj-crucifader-and-friends"
+air_time: "Saturdays, 8 p.m."
 type: "local"
 more_info: ""
 source_url: "https://www.wcrsfm.org/programs/non-stop-wdj-crucifader-and-friends"

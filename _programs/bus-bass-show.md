@@ -2,6 +2,7 @@
 layout: program
 title: "Bus Bass Show"
 slug: "bus-bass-show"
+air_time: "Wednesdays, 9 p.m."
 type: "local"
 more_info: ""
 source_url: "https://www.wcrsfm.org/programs/bus-bass-show"

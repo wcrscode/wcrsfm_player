@@ -2,6 +2,7 @@
 layout: program
 title: "Twangtacular"
 slug: "twangtacular"
+air_time: "Saturdays, 3 p.m."
 type: "local"
 more_info: ""
 source_url: "https://www.wcrsfm.org/programs/twangtacular"

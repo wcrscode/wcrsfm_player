@@ -6,14 +6,70 @@ permalink: /programs/
 <h1>Programs</h1>
 <p>All of our current programs, including locally-produced and syndicated shows.</p>
 
+<div class="type-filter" role="group" aria-label="Filter programs by type">
+  <button type="button" class="type-filter-btn" aria-pressed="true"  data-filter="all">All</button>
+  <button type="button" class="type-filter-btn" aria-pressed="false" data-filter="local">Local</button>
+  <button type="button" class="type-filter-btn" aria-pressed="false" data-filter="syndicated">Syndicated</button>
+</div>
+
+{% assign letters = "A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z" | split: "," %}
 {% assign programs = site.programs | default: empty_array | sort: "title" %}
-<ul class="program-list">
-  {% for prog in programs %}
-  <li class="program-item">
-    <h3 class="program-title"><a href="{{ prog.url | relative_url }}">{{ prog.title }}</a></h3>
-    {% if prog.quick_description %}
-    <p class="program-quick">{{ prog.quick_description }}</p>
+{% assign grouped = programs | group_by_exp: "p", "p.title | upcase | slice: 0, 1" | sort: "name" %}
+
+{% assign present_letters = "" %}
+{% assign has_num = false %}
+{% for g in grouped %}
+  {% if "ABCDEFGHIJKLMNOPQRSTUVWXYZ" contains g.name %}
+    {% assign present_letters = present_letters | append: g.name %}
+  {% else %}
+    {% assign has_num = true %}
+  {% endif %}
+{% endfor %}
+
+<nav class="alpha-nav" aria-label="Jump to letter">
+  <ul>
+    {% if has_num %}
+    <li><a href="#alpha-num">#</a></li>
     {% endif %}
-  </li>
-  {% endfor %}
-</ul>
+    {% for L in letters %}
+    <li>
+      {% if present_letters contains L %}
+      <a href="#alpha-{{ L | downcase }}">{{ L }}</a>
+      {% else %}
+      <span class="alpha-off" aria-disabled="true">{{ L }}</span>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</nav>
+
+{% for g in grouped %}
+  {% if "ABCDEFGHIJKLMNOPQRSTUVWXYZ" contains g.name %}
+    {% assign anchor = g.name | downcase %}
+    {% assign label = g.name %}
+  {% else %}
+    {% assign anchor = "num" %}
+    {% assign label = "#" %}
+  {% endif %}
+<section class="alpha-section" id="alpha-{{ anchor }}">
+  <h2 class="alpha-heading">{{ label }}</h2>
+  <ul class="program-list">
+    {% for prog in g.items %}
+    <li class="program-item" data-type="{{ prog.type }}">
+      <h3 class="program-title">
+        <a href="{{ prog.url | relative_url }}">{{ prog.title }}</a>
+        {% if prog.type %}
+        <span class="program-badge program-badge-{{ prog.type }}">{{ prog.type }}</span>
+        {% endif %}
+      </h3>
+      {% if prog.air_time and prog.air_time != "" %}
+      <p class="program-air-time">{{ prog.air_time }}</p>
+      {% endif %}
+      {% if prog.quick_description %}
+      <p class="program-quick">{{ prog.quick_description }}</p>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endfor %}

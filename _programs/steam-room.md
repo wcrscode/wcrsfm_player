@@ -2,6 +2,7 @@
 layout: program
 title: "Steam Room"
 slug: "steam-room"
+air_time: "Fridays, 8 p.m."
 type: "local"
 more_info: "http://wcrsfm.org/programs/steam-room"
 source_url: "https://www.wcrsfm.org/programs/steam-room"

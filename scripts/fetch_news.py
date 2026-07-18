@@ -398,12 +398,17 @@ def main():
     existing = load_existing_slugs()
     print(f"\n{len(existing)} on disk; {len(discovered)} discovered")
 
-    # Patch missing dates on already-saved articles using the feed map,
-    # and update `order` so previously-saved files participate in sorts.
+    # Patch missing dates on already-saved articles: prefer RSS pubDates
+    # (accurate to the minute), fall back to the listing-page "created"
+    # date for older items that have fallen off the RSS window. Also
+    # refresh `order` so previously-saved files participate in sorts.
     date_patched = order_patched = 0
     for slug in existing:
-        if slug in date_map:
-            if patch_date(slug, date_map[slug]):
+        picked = date_map.get(slug)
+        if not picked and slug in discovered:
+            picked = discovered[slug].get("date")
+        if picked:
+            if patch_date(slug, picked):
                 date_patched += 1
         if slug in discovered:
             patch_order(slug, discovered[slug]["order"])

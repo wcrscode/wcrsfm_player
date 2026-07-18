@@ -6,3 +6,5 @@ vendor/
 mail_config.php
 data/
 deploy.sh
+.DS_Store
+**/.DS_Store

@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.wcrsfm\.org$ [NC]
+RewriteRule ^(.*)$ https://wcrsfm.org/$1 [R=301,L]

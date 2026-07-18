@@ -2,6 +2,7 @@
 layout: program
 title: "First You Hustle"
 slug: "first-you-hustle"
+air_time: "Mondays, 7 p.m."
 type: "local"
 more_info: "https://firstyouhustle.podbean.com/"
 source_url: "https://www.wcrsfm.org/programs/first-you-hustle"

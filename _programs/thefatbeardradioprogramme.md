@@ -2,6 +2,7 @@
 layout: program
 title: "The Fatbeard Radio Programme"
 slug: "thefatbeardradioprogramme"
+air_time: "Thursdays, 11 p.m."
 type: "local"
 more_info: "http://www.facebook.com/pages/FatBeard/191334387603819"
 source_url: "https://www.wcrsfm.org/programs/thefatbeardradioprogramme"

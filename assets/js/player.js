@@ -127,9 +127,10 @@
   }
 
   function renderUpcoming(root) {
-    const listEl = root.querySelector('[data-upcoming-list]');
-    const dataEl = root.querySelector('[data-upcoming-data]');
-    if (!listEl || !dataEl) return;
+    const nowListEl  = root.querySelector('[data-upcoming-now]');
+    const nextListEl = root.querySelector('[data-upcoming-next]');
+    const dataEl     = root.querySelector('[data-upcoming-data]');
+    if (!dataEl || (!nowListEl && !nextListEl)) return;
 
     let data;
     try { data = JSON.parse(dataEl.textContent); }
@@ -163,24 +164,54 @@
       upcoming.push(flat[(currentIdx + i) % flat.length]);
     }
 
-    listEl.innerHTML = upcoming.map((s, i) => {
-      const label = i === 0 ? 'On Air Now' : i === 1 ? 'Up Next' : '';
-      const when  = `${DAY_LABELS[s.dayIdx]} ${s.start_display}`;
-      let name;
-      if (s.program_slug) {
-        name = `<a href="/programs/${encodeURIComponent(s.program_slug)}/">${escapeHtml(s.name)}</a>`;
-      } else if (s.url) {
-        name = `<a href="${escapeHtml(s.url)}" target="_blank" rel="noopener">${escapeHtml(s.name)}</a>`;
-      } else {
-        name = escapeHtml(s.name);
-      }
-      const labelHtml = label ? `<div class="upcoming-label">${label}</div>` : '';
-      return `
-        <div class="upcoming-item${i === 0 ? ' upcoming-current' : ''}" role="listitem">
-          ${labelHtml}
-          <div class="upcoming-line"><span class="upcoming-when">${when}</span> <span class="upcoming-sep">—</span> <span class="upcoming-name">${name}</span></div>
+    const nameHtml = (s) => s.program_slug
+      ? `<a href="/programs/${encodeURIComponent(s.program_slug)}/">${escapeHtml(s.name)}</a>`
+      : escapeHtml(s.name);
+
+    if (nowListEl && upcoming[0]) {
+      nowListEl.innerHTML = `
+        <div class="upcoming-item">
+          <div class="upcoming-line"><span class="upcoming-name">${nameHtml(upcoming[0])}</span></div>
         </div>`;
-    }).join('');
+    }
+
+    if (nextListEl) {
+      nextListEl.innerHTML = upcoming.slice(1).map(s => `
+        <div class="upcoming-item" role="listitem">
+          <div class="upcoming-line"><span class="upcoming-when">${s.start_display}</span> <span class="upcoming-sep">—</span> <span class="upcoming-name">${nameHtml(s)}</span></div>
+        </div>`).join('');
+    }
+  }
+
+  function initProgramFilter() {
+    const filter = document.querySelector('.type-filter');
+    if (!filter || filter.dataset.wired === '1') return;
+    filter.dataset.wired = '1';
+    const btns     = Array.from(filter.querySelectorAll('.type-filter-btn'));
+    const items    = Array.from(document.querySelectorAll('.program-item'));
+    const sections = Array.from(document.querySelectorAll('.alpha-section'));
+    const navLinks = Array.from(document.querySelectorAll('.alpha-nav a'));
+    const apply = (kind) => {
+      btns.forEach(b => b.setAttribute('aria-pressed',
+        b.dataset.filter === kind ? 'true' : 'false'));
+      items.forEach(li => {
+        li.hidden = kind !== 'all' && li.dataset.type !== kind;
+      });
+      sections.forEach(sec => {
+        const anyVisible = Array.from(sec.querySelectorAll('.program-item'))
+          .some(li => !li.hidden);
+        sec.hidden = !anyVisible;
+      });
+      navLinks.forEach(a => {
+        const id = (a.getAttribute('href') || '').slice(1);
+        const target = id && document.getElementById(id);
+        const off = !target || target.hidden;
+        a.classList.toggle('is-off', off);
+        if (off) a.setAttribute('aria-disabled', 'true');
+        else     a.removeAttribute('aria-disabled');
+      });
+    };
+    btns.forEach(b => b.addEventListener('click', () => apply(b.dataset.filter)));
   }
 
   function initSchedule() {
@@ -219,6 +250,7 @@
     });
   }
   initSchedule();
+  initProgramFilter();
 
   // --- Contact form ------------------------------------------------------
   function initContactForm() {
@@ -305,6 +337,7 @@
       if (push) history.pushState({}, '', href);
       updateNavHighlight();
       initSchedule();
+      initProgramFilter();
       initContactForm();
       const hash = new URL(href, location.href).hash;
       if (hash) {

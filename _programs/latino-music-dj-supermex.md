@@ -2,6 +2,7 @@
 layout: program
 title: "Latino Music with DJ Supermex"
 slug: "latino-music-dj-supermex"
+air_time: "Weekends, 6 a.m."
 type: "local"
 more_info: ""
 source_url: "https://www.wcrsfm.org/programs/latino-music-dj-supermex"

@@ -2,6 +2,7 @@
 layout: program
 title: "Hidden Hits Hour"
 slug: "hidden-hits-hour"
+air_time: "Mondays, 7 a.m."
 type: "local"
 more_info: ""
 source_url: "https://www.wcrsfm.org/programs/hidden-hits-hour"

@@ -2,6 +2,7 @@
 layout: program
 title: "Wes Flexner’s Rock N Roll Show"
 slug: "wes-flexners-rock-n-roll-show"
+air_time: "Wednesdays, 7 p.m."
 type: "local"
 more_info: ""
 source_url: "https://www.wcrsfm.org/programs/wes-flexner%E2%80%99s-rock-n-roll-show"

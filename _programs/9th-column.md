@@ -2,6 +2,7 @@
 layout: program
 title: "9th Column"
 slug: "9th-column"
+air_time: "Saturdays, 10 p.m."
 type: "local"
 more_info: ""
 source_url: "https://www.wcrsfm.org/programs/9th-column"

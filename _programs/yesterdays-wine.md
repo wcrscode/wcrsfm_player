@@ -2,6 +2,7 @@
 layout: program
 title: "Yesterday's Wine"
 slug: "yesterdays-wine"
+air_time: "Saturdays, 2 p.m."
 type: "local"
 more_info: ""
 source_url: "https://www.wcrsfm.org/programs/yesterdays-wine"

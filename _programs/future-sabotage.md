@@ -2,6 +2,7 @@
 layout: program
 title: "Future Sabotage"
 slug: "future-sabotage"
+air_time: "Wednesdays, 10 p.m."
 type: "local"
 more_info: ""
 source_url: "https://www.wcrsfm.org/programs/future-sabotage"

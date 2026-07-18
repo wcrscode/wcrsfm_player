@@ -9,17 +9,21 @@ layout: default
   {% endif %}
 
   <dl class="program-meta">
+    {% if page.air_time and page.air_time != "" %}
+    <dt>Air time</dt><dd>{{ page.air_time }}</dd>
+    {% endif %}
     {% if page.genre %}
     <dt>Genre</dt><dd>{{ page.genre }}</dd>
-    {% endif %}
-    {% if page.more_info and page.more_info != "" %}
-    <dt>More info</dt><dd><a href="{{ page.more_info }}" target="_blank" rel="noopener">{{ page.more_info }}</a></dd>
     {% endif %}
     {% if page.djs and page.djs.size > 0 %}
     <dt>{% if page.djs.size == 1 %}DJ{% else %}DJs{% endif %}</dt>
     <dd>{{ page.djs | join: ", " }}</dd>
     {% endif %}
   </dl>
+
+  {% if page.more_info and page.more_info != "" %}
+  <p class="program-more-info"><a href="{{ page.more_info }}" target="_blank" rel="noopener">More Information</a></p>
+  {% endif %}
 
   {% if content and content != "" %}
   <div class="program-body">

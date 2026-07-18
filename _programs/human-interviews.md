@@ -2,6 +2,7 @@
 layout: program
 title: "Human Interviews"
 slug: "human-interviews"
+air_time: "Wednesdays, 11 p.m."
 type: "local"
 more_info: "https://podcasters.spotify.com/pod/show/humaninterviews/support"
 source_url: "https://www.wcrsfm.org/programs/human-interviews"

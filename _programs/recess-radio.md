@@ -2,6 +2,7 @@
 layout: program
 title: "Recess Radio"
 slug: "recess-radio"
+air_time: "Sundays, 3 p.m."
 type: "local"
 more_info: ""
 source_url: "https://www.wcrsfm.org/programs/recess-radio"

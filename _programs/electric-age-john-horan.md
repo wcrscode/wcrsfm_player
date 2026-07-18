@@ -2,6 +2,7 @@
 layout: program
 title: "The Electric Age with John Horan"
 slug: "electric-age-john-horan"
+air_time: "Saturdays, 11 a.m."
 type: "local"
 more_info: ""
 source_url: "https://www.wcrsfm.org/programs/electric-age-john-horan"

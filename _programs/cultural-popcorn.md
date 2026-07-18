@@ -2,6 +2,7 @@
 layout: program
 title: "Cultural Popcorn"
 slug: "cultural-popcorn"
+air_time: "Fridays, 9 p.m."
 type: "local"
 more_info: ""
 source_url: "https://www.wcrsfm.org/programs/cultural-popcorn"

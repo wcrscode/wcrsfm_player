@@ -4,10 +4,59 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+{%- assign og_title = page.title | default: site.title -%}
+{%- if page.title -%}
+  {%- assign full_title = page.title | append: " — " | append: site.title -%}
+{%- else -%}
+  {%- assign full_title = site.title -%}
+{%- endif -%}
+{%- assign og_desc = page.excerpt | default: page.description | default: site.description | strip_html | strip_newlines | truncate: 200 -%}
+{%- assign og_image_path = page.image | default: "/assets/img/IGlogo.png" -%}
+{%- assign og_image = og_image_path | absolute_url -%}
+{%- assign og_url = page.url | absolute_url -%}
+
+<meta name="description" content="{{ og_desc }}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:type" content="{% if page.layout == 'article' %}article{% else %}website{% endif %}">
+<meta property="og:title" content="{{ full_title }}">
+<meta property="og:description" content="{{ og_desc }}">
+<meta property="og:url" content="{{ og_url }}">
+<meta property="og:image" content="{{ og_image }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ full_title }}">
+<meta name="twitter:description" content="{{ og_desc }}">
+<meta name="twitter:image" content="{{ og_image }}">
+
+<link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="any">
+<link rel="icon" type="image/svg+xml" href="{{ '/favicon.svg' | relative_url }}">
+<link rel="icon" type="image/png" sizes="96x96" href="{{ '/favicon-96x96.png' | relative_url }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ '/apple-touch-icon.png' | relative_url }}">
+<link rel="manifest" href="{{ '/site.webmanifest' | relative_url }}">
+<meta name="theme-color" content="#b61f3c">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css?family=Arimo:400,700&subset=latin" rel="stylesheet">
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+
+{% if jekyll.environment == "production" %}
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//stream.wcrsfm.org/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+{% endif %}
 </head>
 <body>
 <a class="skip-link" href="#content">Skip to main content</a>
@@ -26,10 +75,16 @@
     <ul>
       {% for item in site.data.nav %}
       <li>
+        {% if item.external %}
+        <a href="{{ item.url }}" target="_blank" rel="noopener">
+          {{ item.title }}
+        </a>
+        {% else %}
         <a href="{{ item.url | relative_url }}"
            {% if here == item.url %}aria-current="page"{% endif %}>
           {{ item.title }}
         </a>
+        {% endif %}
       </li>
       {% endfor %}
     </ul>
