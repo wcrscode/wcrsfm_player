@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-12T17:17:44",
+  "fetched_at": "2026-07-23T06:06:34",
   "days": {
     "MON": [
       {
@@ -435,14 +435,14 @@
         "program_slug": "you-earned-this"
       },
       {
-        "name": "The Laura Flanders Show",
+        "name": "Laura Flanders and Friends",
         "description": "",
         "start": "18:30",
         "end": "19:00",
         "start_display": "6:30 pm",
         "end_display": "7:00 pm",
         "url": "",
-        "program_slug": "laura-flanders-show"
+        "program_slug": ""
       },
       {
         "name": "The World Party",
