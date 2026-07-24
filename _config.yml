@@ -29,3 +29,9 @@ exclude:
   - composer.json
   - composer.lock
   - data
+  - deploy.sh
+  - scripts
+  - .deploy_state
+  - admin_functions_for_wcrsfm.md
+  - getschedulejson.py
+  - show_audit.yml
