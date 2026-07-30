@@ -6,6 +6,9 @@ baseurl: ""
 markdown: kramdown
 plugins: []
 
+# Bump when assets/js/player.js changes to force browsers past DreamHost's 30-day cache.
+player_js_version: 1
+
 collections:
   articles:
     output: true
