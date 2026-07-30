@@ -1,6 +1,6 @@
 (() => {
-  const STREAM_URL = 'https://archive.radio614.org:8001/wcrs_backup';
-  const STATUS_URL = 'https://archive.radio614.org:8001/status-json.xsl';
+  const STREAM_URL = 'https://listenwcrs.pacificaservice.org/wcrs';
+  const STATUS_URL = 'https://listenwcrs.pacificaservice.org/status-json.xsl';
   const POLL_MS    = 2 * 60 * 1000;
 
   const audio     = document.getElementById('audio');
@@ -42,7 +42,7 @@
       let sources = data.icestats && data.icestats.source;
       if (!sources) return;
       if (!Array.isArray(sources)) sources = [sources];
-      const mount = sources.find(s => (s.listenurl || '').endsWith('/wcrs_backup')) || sources[0];
+      const mount = sources.find(s => (s.listenurl || '').endsWith('/wcrs')) || sources[0];
       const title = mount.title || mount.yp_currently_playing || mount.server_name || '';
       nowEl.textContent = title || '—';
       nowEl.title = title;
