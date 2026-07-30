@@ -1,3 +1,11 @@
+- key: /wcrs/20260729-stack-flippin/
+  name: 20260729 Stack Flippin
+  url: https://www.mixcloud.com/wcrs/20260729-stack-flippin/
+  image: /assets/shows/20260729-stack-flippin.jpg
+  description: Freakin psych rock from the 60s +more
+  created_time: '2026-07-30T00:00:13Z'
+  host: WCRS LP-FM
+  account: wcrs
 - key: /wcrs/local-love-72626/
   name: Local Love - 7/26/26
   url: https://www.mixcloud.com/wcrs/local-love-72626/
@@ -65,7 +73,7 @@
   name: It's All Happening - Bigger Picture (Two Homes)
   url: https://www.mixcloud.com/BigBeefProductions/its-all-happening-bigger-picture-two-homes/
   image: /assets/shows/bigbeefproductions-its-all-happening-bigger-picture-two-homes.jpg
-  description: 'A weekly music program delivering an inspired reinvention of how we inform ourselves about the world we live in. A soundtrack for these all too interesting times.'
+  description: A weekly music program delivering an inspired reinvention of how we inform ourselves about the world we live in. A soundtrack for these all too interesting times.
   created_time: '2026-07-23T15:00:39Z'
   host: IT'S ALL HAPPENING
   account: BigBeefProductions
