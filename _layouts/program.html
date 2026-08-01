@@ -34,4 +34,44 @@ layout: default
   <p class="program-schedule-link">
     See when this show airs on the <a href="{{ '/schedule/' | relative_url }}">program schedule</a>.
   </p>
+
+  {%- assign episodes = "" | split: "" -%}
+  {%- if page.mixcloud_account -%}
+    {%- assign episodes = site.data.shows | where: "account", page.mixcloud_account -%}
+  {%- elsif page.mixcloud_name_prefix -%}
+    {%- for prefix in page.mixcloud_name_prefix -%}
+      {%- assign matched = site.data.shows | where_exp: "s", "s.name contains prefix" -%}
+      {%- assign episodes = episodes | concat: matched -%}
+    {%- endfor -%}
+  {%- endif -%}
+  {%- assign episodes = episodes | sort: "created_time" | reverse -%}
+
+  {% if episodes.size > 0 %}
+  <section class="program-episodes">
+    <h2>Episodes</h2>
+    <ol class="episode-list">
+      {% for ep in episodes %}
+      <li class="episode-item">
+        {% if ep.image %}
+        <a href="{{ ep.url }}" class="episode-thumb" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1">
+          <img src="{{ ep.image | relative_url }}" alt="" loading="lazy">
+        </a>
+        {% endif %}
+        <div class="episode-body">
+          <h3 class="episode-title">
+            <a href="{{ ep.url }}" target="_blank" rel="noopener">{{ ep.name | escape }}</a>
+          </h3>
+          {% if ep.created_time %}
+          <p class="episode-date">{{ ep.created_time | date: "%B %-d, %Y" }}</p>
+          {% endif %}
+          {% assign desc = ep.description | strip_html | strip %}
+          {% if desc != "" %}
+          <p class="episode-desc">{{ desc | truncatewords: 40 }}</p>
+          {% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ol>
+  </section>
+  {% endif %}
 </article>

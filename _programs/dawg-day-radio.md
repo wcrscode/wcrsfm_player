@@ -7,4 +7,7 @@ type: "local"
 more_info: ""
 source_url: "https://www.wcrsfm.org/programs/dawg-day-radio"
 genre: "alternative rock"
+mixcloud_name_prefix:
+  - "DAWG DAY RADIO"
+  - "Dawg Day Radio"
 ---

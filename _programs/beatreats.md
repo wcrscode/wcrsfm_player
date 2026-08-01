@@ -10,6 +10,7 @@ quick_description: "synth pop, trance"
 genre: "synth pop, trance"
 djs:
   - "admin"
+mixcloud_account: "beatreats"
 ---
 {% raw %}
 <p>synth pop, trance</p>

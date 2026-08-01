@@ -10,6 +10,8 @@ quick_description: "a mixture of music and ideas about technology, society and t
 genre: "a mixture of music and ideas about technology, society and the future"
 djs:
   - "futuresabotage"
+mixcloud_name_prefix:
+  - "Future Sabotage"
 ---
 {% raw %}
 <p>The future is not what you want it to be. You are stuck in a spaceship heading into a void. The soundtrack piped in as 1s and 0s a digital collage. Where are we going and why are the digital deities known as algorithms choosing our paths in the choose your own adventure book we call life.</p>

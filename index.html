@@ -35,6 +35,22 @@ layout: default
   <p>Tap or click on the image or the title to open a link to the program on our <a href="https://mixcloud.com/wcrs" target="_blank" rel="noopener">Mixcloud</a>.</p>
   <ul class="show-list">
     {% for show in site.data.shows limit:6 %}
+    {%- assign match = nil -%}
+    {%- for prog in site.programs -%}
+      {%- if prog.mixcloud_account and show.account and prog.mixcloud_account == show.account -%}
+        {%- assign match = prog -%}
+        {%- break -%}
+      {%- endif -%}
+      {%- if prog.mixcloud_name_prefix -%}
+        {%- for prefix in prog.mixcloud_name_prefix -%}
+          {%- if show.name contains prefix -%}
+            {%- assign match = prog -%}
+            {%- break -%}
+          {%- endif -%}
+        {%- endfor -%}
+        {%- if match -%}{%- break -%}{%- endif -%}
+      {%- endif -%}
+    {%- endfor -%}
     <li class="show">
       {% if show.image %}
       <a href="{{ show.url }}" class="show-image" target="_blank" rel="noopener">
@@ -45,11 +61,13 @@ layout: default
         <h3 class="show-title"><a href="{{ show.url }}" target="_blank" rel="noopener">{{ show.name | escape }}</a></h3>
         {% assign desc = show.description | strip_html | strip %}
         {% if desc != "" %}
-        <p class="show-desc">{{ desc | truncate: 280 }}</p>
+        <p class="show-desc">{{ desc | truncate: 200 }}</p>
+        {% endif %}
+        {% if match %}
+        <p class="show-more"><a href="{{ match.url | relative_url }}">More {{ match.title }} episodes &rarr;</a></p>
         {% endif %}
       </div>
     </li>
     {% endfor %}
   </ul>
-  <p class="news-more"><a href="{{ '/archives/' | relative_url }}">All Music Archives &rarr;</a></p>
 </section>

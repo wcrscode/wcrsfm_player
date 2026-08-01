@@ -8,6 +8,7 @@ more_info: ""
 source_url: "https://www.wcrsfm.org/programs/yesterdays-wine"
 quick_description: "Classic Country Music"
 genre: "Classic country"
+mixcloud_account: "Yesterdays_Wine"
 ---
 {% raw %}
 <p>Big hits, new favorites &amp; unburied gems from 1950s-70s<br/>

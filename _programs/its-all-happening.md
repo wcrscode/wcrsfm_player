@@ -8,7 +8,7 @@ more_info: "https://www.bigbeef.com/radio"
 source_url: "https://www.wcrsfm.org/programs/its-all-happening"
 quick_description: "A weekly music program delivering an inspired reinvention of how we inform ourselves about the world we live in. A soundtrack for these all too interesting times."
 genre: "Hybrid of Diverse Music & Information"
-
+mixcloud_account: "BigBeefProductions"
 ---
 "IAH is the right program at the right time"
 
