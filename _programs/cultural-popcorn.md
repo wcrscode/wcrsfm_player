@@ -8,6 +8,7 @@ more_info: ""
 source_url: "https://www.wcrsfm.org/programs/cultural-popcorn"
 quick_description: "mix of archived programs"
 genre: "Freeform"
+mixcloud_account: "Cultural_Popcorn"
 ---
 {% raw %}
 <p>Cultural Popcorn is an eclectic, themed weekly music show featuring music old, new, borrowed and blue.</p>
