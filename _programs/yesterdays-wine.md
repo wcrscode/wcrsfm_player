@@ -10,8 +10,4 @@ quick_description: "Classic Country Music"
 genre: "Classic country"
 mixcloud_account: "Yesterdays_Wine"
 ---
-{% raw %}
-<p>Big hits, new favorites &amp; unburied gems from 1950s-70s<br/>
-country music. All of it originating from my personal collection of LPs &amp; 45s, much of it<br/>
-purchased at Columbus record stores.</p>
-{% endraw %}
+Spinning the best of classic country music from the 1950s-70s. Old favorites, unburied treasure & newly discovered gems sourced from record stores & other locations around Ohio & the rest of the country.
