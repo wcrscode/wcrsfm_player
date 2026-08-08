@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-23T06:06:34",
+  "fetched_at": "2026-08-08T10:55:57",
   "days": {
     "MON": [
       {
@@ -33,14 +33,14 @@
         "program_slug": "bobs-basement-jazz"
       },
       {
-        "name": "The Global Village with Chris Heim",
-        "description": "",
+        "name": "Oldies Time Machine",
+        "description": "Like the title of the show says. Oldies.",
         "start": "05:00",
         "end": "06:00",
         "start_display": "5:00 am",
         "end_display": "6:00 am",
         "url": "",
-        "program_slug": "global-village"
+        "program_slug": ""
       },
       {
         "name": "Morning Meditation",
@@ -81,6 +81,16 @@
         "end_display": "9:00 am",
         "url": "",
         "program_slug": "democracy-now"
+      },
+      {
+        "name": "Morning PSAs",
+        "description": "",
+        "start": "08:59",
+        "end": "09:00",
+        "start_display": "8:59 am",
+        "end_display": "9:00 am",
+        "url": "",
+        "program_slug": ""
       },
       {
         "name": "Bradcast",
@@ -233,8 +243,8 @@
         "program_slug": "your-music"
       },
       {
-        "name": "divinityisreal",
-        "description": "",
+        "name": "Dirty Laundry",
+        "description": "Dirty Laundry plays Indie, Shoegaze, Trip Hop, Electronic, Alternative, Dream Pop, and many other genres. You won't hear New Country on THIS SHOW unless someone has a knife to my throat. My objective is to discover and play music from artists worldwide, from Germany to Iceland, from London to the U.S. It may be wild or gentle, haunting or chilling. But one thing is for sure, something is bound to move you.",
         "start": "23:00",
         "end": "00:00",
         "start_display": "11:00 pm",
@@ -285,14 +295,14 @@
         "program_slug": "your-music"
       },
       {
-        "name": "The Global Village with Chris Heim",
-        "description": "",
+        "name": "The FLip Side",
+        "description": "Mr. C. plays both the A and B sides of real 45 RPM records!",
         "start": "05:00",
         "end": "06:00",
         "start_display": "5:00 am",
         "end_display": "6:00 am",
         "url": "",
-        "program_slug": "global-village"
+        "program_slug": ""
       },
       {
         "name": "Morning Meditation",
@@ -333,6 +343,16 @@
         "end_display": "9:00 am",
         "url": "",
         "program_slug": "democracy-now"
+      },
+      {
+        "name": "Morning PSAs",
+        "description": "",
+        "start": "08:59",
+        "end": "09:00",
+        "start_display": "8:59 am",
+        "end_display": "9:00 am",
+        "url": "",
+        "program_slug": ""
       },
       {
         "name": "Bradcast",
@@ -527,14 +547,14 @@
         "program_slug": "night-plant"
       },
       {
-        "name": "The Global Village with Chris Heim",
-        "description": "",
+        "name": "Modern Jetset",
+        "description": "Come fly the fancy skies! Iris Berkeley is your pilot for Modern Jetset, a weekly round-the-world trip through music from soul to synthpop, reggae to R&B, Latin to lounge, and more. With a strong focus on new and recent releases, Modern Jetset also connects the dots between fresh new favorites and the vintage sounds and retro selections that inspire today's independent music landscape.",
         "start": "05:00",
         "end": "06:00",
         "start_display": "5:00 am",
         "end_display": "6:00 am",
         "url": "",
-        "program_slug": "global-village"
+        "program_slug": ""
       },
       {
         "name": "Morning Meditation",
@@ -575,6 +595,16 @@
         "end_display": "9:00 am",
         "url": "",
         "program_slug": "democracy-now"
+      },
+      {
+        "name": "Morning PSAs",
+        "description": "",
+        "start": "08:59",
+        "end": "09:00",
+        "start_display": "8:59 am",
+        "end_display": "9:00 am",
+        "url": "",
+        "program_slug": ""
       },
       {
         "name": "Bradcast",
@@ -749,14 +779,14 @@
         "program_slug": "wes-flexners-rock-n-roll-show"
       },
       {
-        "name": "The Global Village with Chris Heim",
+        "name": "That Driving Beat (Hour 1)",
         "description": "",
         "start": "05:00",
         "end": "06:00",
         "start_display": "5:00 am",
         "end_display": "6:00 am",
         "url": "",
-        "program_slug": "global-village"
+        "program_slug": ""
       },
       {
         "name": "Morning Meditation",
@@ -797,6 +827,16 @@
         "end_display": "9:00 am",
         "url": "",
         "program_slug": "democracy-now"
+      },
+      {
+        "name": "Morning PSAs",
+        "description": "",
+        "start": "08:59",
+        "end": "09:00",
+        "start_display": "8:59 am",
+        "end_display": "9:00 am",
+        "url": "",
+        "program_slug": ""
       },
       {
         "name": "Bradcast",
@@ -971,14 +1011,14 @@
         "program_slug": "thefatbeardradioprogramme"
       },
       {
-        "name": "The Global Village with Chris Heim",
+        "name": "That Driving Beat (Hour 2)",
         "description": "",
         "start": "05:00",
         "end": "06:00",
         "start_display": "5:00 am",
         "end_display": "6:00 am",
         "url": "",
-        "program_slug": "global-village"
+        "program_slug": ""
       },
       {
         "name": "Morning Meditation",
@@ -1019,6 +1059,16 @@
         "end_display": "9:00 am",
         "url": "",
         "program_slug": "democracy-now"
+      },
+      {
+        "name": "Morning PSAs",
+        "description": "",
+        "start": "08:59",
+        "end": "09:00",
+        "start_display": "8:59 am",
+        "end_display": "9:00 am",
+        "url": "",
+        "program_slug": ""
       },
       {
         "name": "Bradcast",
@@ -1223,14 +1273,14 @@
         "program_slug": "twangtacular"
       },
       {
-        "name": "Afropop Worldwide",
-        "description": "",
+        "name": "Afrosonic Taxi",
+        "description": "Connecting cultures with music. Host DJK takes listeners on a journey through music with African roots worldwide. From night clubs in Dakar to festivals in Bahia, from recording studios in Havana to family compounds on the streets of Lagos. We follow the African diaspora to the Americas, the Caribbean and Europe, but never stray far from the beat of the Mother Continent.",
         "start": "16:00",
         "end": "17:00",
         "start_display": "4:00 pm",
         "end_display": "5:00 pm",
         "url": "",
-        "program_slug": "afropop-worldwide"
+        "program_slug": ""
       },
       {
         "name": "Indigenous in Music",
@@ -1243,14 +1293,14 @@
         "program_slug": "indigenous-in-music"
       },
       {
-        "name": "The Global Village with Chris Heim",
-        "description": "",
+        "name": "50 Ways to Weave Your Covers",
+        "description": "50 Ways to Weave Your Covers, with Gray Wheeler and DJ Erik Mattox, is a one-hour talk show featuring music on Asheville FM (103.3) that showcases cover songs, original songs that gained fame when covered, and obscure hip-hop sample sources. We revel in the unexpected, such as funky covers of mainstream \" often staid \" originals, gender-swapped covers, and artist tributes.",
         "start": "18:00",
         "end": "19:00",
         "start_display": "6:00 pm",
         "end_display": "7:00 pm",
         "url": "",
-        "program_slug": "global-village"
+        "program_slug": ""
       },
       {
         "name": "beaTreats",
@@ -1375,14 +1425,24 @@
         "program_slug": "rekloos-presents-bass-kulture"
       },
       {
-        "name": "Dawg Day Radio / Local Love",
+        "name": "Dawg Day Radio",
         "description": "",
         "start": "13:00",
-        "end": "15:00",
+        "end": "14:00",
         "start_display": "1:00 pm",
-        "end_display": "3:00 pm",
+        "end_display": "2:00 pm",
         "url": "",
         "program_slug": "dawg-day-radio"
+      },
+      {
+        "name": "Local Love",
+        "description": "Corndawg plays a full hour of local music and frequently has local musician guests. Check it out!",
+        "start": "14:00",
+        "end": "15:00",
+        "start_display": "2:00 pm",
+        "end_display": "3:00 pm",
+        "url": "",
+        "program_slug": "local-love"
       },
       {
         "name": "Recess Radio",
