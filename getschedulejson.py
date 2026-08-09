@@ -157,13 +157,14 @@ def group_by_day(raw, prog_exact, prog_spaced):
 def apply_local_overrides(days):
     """Post-process the raw broadcast feed to correct local edits that
     the upstream schedule doesn't reflect yet.
-      - Drop "Morning Weather" (was a 1-minute filler at 08:59-09:00)
+      - Drop "Morning PSAs" (a 1-minute filler at 08:59-09:00; was
+        previously named "Morning Weather" upstream)
       - Extend the 08:00 Democracy Now slot to run the full hour ending
-        at 09:00 (was 08:00-08:59 because Morning Weather occupied that
+        at 09:00 (was 08:00-08:59 because Morning PSAs occupied that
         last minute)
     """
     for d in DAY_NAMES:
-        days[d] = [s for s in days[d] if _norm_title(s["name"]) != "morning weather"]
+        days[d] = [s for s in days[d] if _norm_title(s["name"]) != "morning psas"]
         for s in days[d]:
             n = _norm_title(s["name"])
             if s["start"] == "08:00" and ("democracy now" in n or "democracynow" in n):

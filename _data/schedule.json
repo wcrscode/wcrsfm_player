@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-08T10:55:57",
+  "fetched_at": "2026-08-09T12:39:14",
   "days": {
     "MON": [
       {
@@ -81,16 +81,6 @@
         "end_display": "9:00 am",
         "url": "",
         "program_slug": "democracy-now"
-      },
-      {
-        "name": "Morning PSAs",
-        "description": "",
-        "start": "08:59",
-        "end": "09:00",
-        "start_display": "8:59 am",
-        "end_display": "9:00 am",
-        "url": "",
-        "program_slug": ""
       },
       {
         "name": "Bradcast",
@@ -345,16 +335,6 @@
         "program_slug": "democracy-now"
       },
       {
-        "name": "Morning PSAs",
-        "description": "",
-        "start": "08:59",
-        "end": "09:00",
-        "start_display": "8:59 am",
-        "end_display": "9:00 am",
-        "url": "",
-        "program_slug": ""
-      },
-      {
         "name": "Bradcast",
         "description": "",
         "start": "09:00",
@@ -597,16 +577,6 @@
         "program_slug": "democracy-now"
       },
       {
-        "name": "Morning PSAs",
-        "description": "",
-        "start": "08:59",
-        "end": "09:00",
-        "start_display": "8:59 am",
-        "end_display": "9:00 am",
-        "url": "",
-        "program_slug": ""
-      },
-      {
         "name": "Bradcast",
         "description": "",
         "start": "09:00",
@@ -829,16 +799,6 @@
         "program_slug": "democracy-now"
       },
       {
-        "name": "Morning PSAs",
-        "description": "",
-        "start": "08:59",
-        "end": "09:00",
-        "start_display": "8:59 am",
-        "end_display": "9:00 am",
-        "url": "",
-        "program_slug": ""
-      },
-      {
         "name": "Bradcast",
         "description": "",
         "start": "09:00",
@@ -1059,16 +1019,6 @@
         "end_display": "9:00 am",
         "url": "",
         "program_slug": "democracy-now"
-      },
-      {
-        "name": "Morning PSAs",
-        "description": "",
-        "start": "08:59",
-        "end": "09:00",
-        "start_display": "8:59 am",
-        "end_display": "9:00 am",
-        "url": "",
-        "program_slug": ""
       },
       {
         "name": "Bradcast",
