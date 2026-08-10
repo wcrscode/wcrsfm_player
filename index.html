@@ -16,7 +16,7 @@ layout: default
 
   <section id="station-news">
     <h2>News</h2>
-    {% assign news = site.articles | where_exp: "a", "a.categories contains 'station-news'" | sort: "order" %}
+    {% assign news = site.articles | where_exp: "a", "a.categories contains 'station-news'" | sort: "date" | reverse %}
     <ul class="news-summary">
       {% for item in news limit:1 %}
       <li>

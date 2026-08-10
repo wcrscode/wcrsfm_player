@@ -1,7 +1,6 @@
 ---
 layout: article
 date: "2026-08-10"
-order: 382
 title: "Bee Humana release “Corrido de Adelanto”, raise money for Amnesty International U.S.A."
 author: "ear-opener"
 excerpt: "Local folk rock group Bee Humana have released a song, “Corrido de Adelanto”. The song calls attention to the brutality and denial of due process by Immigration and Customs Enforcement. The band is donating proceeds from the sale of the song online to Amnesty International U.S.A."

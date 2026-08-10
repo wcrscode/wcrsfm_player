@@ -4,7 +4,7 @@ layout: default
 <h1>{{ page.title }}</h1>
 {% if page.description %}<p>{{ page.description }}</p>{% endif %}
 
-{% assign items = site.articles | where_exp: "a", "a.categories contains page.category" | sort: "order" %}
+{% assign items = site.articles | where_exp: "a", "a.categories contains page.category" | sort: "date" | reverse %}
 
 {% if items.size > 0 %}
   {% assign lead = items.first %}
