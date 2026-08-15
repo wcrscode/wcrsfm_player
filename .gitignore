@@ -9,3 +9,4 @@ data/
 deploy.sh
 .DS_Store
 **/.DS_Store
+assets/shows/*.jpg
