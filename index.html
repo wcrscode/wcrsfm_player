@@ -13,21 +13,6 @@ layout: default
     <script type="application/json" data-upcoming-data>{{ site.data.schedule.days | jsonify }}</script>
     <p class="news-more"><a href="{{ '/schedule/' | relative_url }}">Full program schedule &rarr;</a></p>
   </section>
-
-  <section id="station-news">
-    <h2>News</h2>
-    {% assign news = site.articles | where_exp: "a", "a.categories contains 'station-news'" | sort: "date" | reverse %}
-    <ul class="news-summary">
-      {% for item in news limit:1 %}
-      <li>
-        <h3 class="news-title"><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
-        {% if item.date and item.date != "" %}<p class="news-date">{% if item.date_approx %}{{ item.date | date: "%B %Y" }} (approx.){% else %}{{ item.date | date: "%B %-d, %Y" }}{% endif %}</p>{% endif %}
-        <p class="news-excerpt">{{ item.excerpt }}</p>
-      </li>
-      {% endfor %}
-    </ul>
-    <p class="news-more"><a href="{{ '/news/' | relative_url }}">All Station News &rarr;</a></p>
-  </section>
 </div>
 
 <section id="recent-shows">

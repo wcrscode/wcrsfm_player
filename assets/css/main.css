@@ -146,18 +146,13 @@ textarea:focus-visible,
   outline-offset: 2px;
 }
 
-/* --- Home top row: On Air + latest News side-by-side above 720px ------- */
+/* --- Home top row: On Air panel ---------------------------------------- */
 .home-top {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2em;
+  grid-template-columns: 1fr;
   margin-top: 2em;
-  align-items: start;
 }
 .home-top > section { margin-top: 0; }
-@media (max-width: 720px) {
-  .home-top { grid-template-columns: 1fr; gap: 1em; }
-}
 
 /* --- Today's schedule (home) + full Program Schedule page -------------- */
 #todays-schedule { margin-top: 2em; }
@@ -172,17 +167,6 @@ textarea:focus-visible,
 .home-top #todays-schedule h2 { margin-top: 0; }
 .home-top #todays-schedule h2 + * { margin-top: 0.3em; }
 .home-top #todays-schedule .news-more { margin-bottom: 0; }
-
-/* Matching news panel on the home top row. */
-.home-top #station-news {
-  background: #f2f2f2;
-  border-left: 5px solid #000;
-  border-radius: 0 6px 6px 0;
-  padding: 0.9em 1.25em 1em;
-}
-.home-top #station-news h2 { margin-top: 0; }
-.home-top #station-news .news-summary > li { border-bottom: 0; padding: 0; }
-.home-top #station-news .news-more { margin-bottom: 0; }
 
 /* Upcoming-shows widget (home page): now playing + next three. */
 .upcoming-strip {
@@ -270,8 +254,7 @@ textarea:focus-visible,
   font-family: Arimo, Futura, "Century Gothic", AppleGothic, sans-serif;
 }
 
-/* --- Station news (home page summary) ---------------------------------- */
-#station-news { margin-top: 2em; }
+/* --- News listing (news page and article summaries) -------------------- */
 .news-summary { list-style: none; padding: 0; margin: 0; }
 .news-summary > li {
   padding: 0.85em 0;
