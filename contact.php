@@ -118,7 +118,9 @@ try {
     $mail->Port       = SMTP_PORT;
 
     $mail->setFrom(MAIL_FROM, MAIL_FROM_NAME);
-    $mail->addAddress(MAIL_TO);
+    foreach (array_map('trim', explode(',', MAIL_TO)) as $to) {
+        if ($to !== '') $mail->addAddress($to);
+    }
     $mail->addReplyTo($email, $name);
 
     $mail->Subject = 'WCRS Contact: ' . $subject;
