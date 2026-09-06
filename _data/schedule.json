@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-09T12:39:14",
+  "fetched_at": "2026-09-06T13:16:33",
   "days": {
     "MON": [
       {
@@ -233,8 +233,8 @@
         "program_slug": "your-music"
       },
       {
-        "name": "Dirty Laundry",
-        "description": "Dirty Laundry plays Indie, Shoegaze, Trip Hop, Electronic, Alternative, Dream Pop, and many other genres. You won't hear New Country on THIS SHOW unless someone has a knife to my throat. My objective is to discover and play music from artists worldwide, from Germany to Iceland, from London to the U.S. It may be wild or gentle, haunting or chilling. But one thing is for sure, something is bound to move you.",
+        "name": "Divinity's Real",
+        "description": "",
         "start": "23:00",
         "end": "00:00",
         "start_display": "11:00 pm",
@@ -527,8 +527,8 @@
         "program_slug": "night-plant"
       },
       {
-        "name": "Modern Jetset",
-        "description": "Come fly the fancy skies! Iris Berkeley is your pilot for Modern Jetset, a weekly round-the-world trip through music from soul to synthpop, reggae to R&B, Latin to lounge, and more. With a strong focus on new and recent releases, Modern Jetset also connects the dots between fresh new favorites and the vintage sounds and retro selections that inspire today's independent music landscape.",
+        "name": "The Modern Jetset",
+        "description": "",
         "start": "05:00",
         "end": "06:00",
         "start_display": "5:00 am",
