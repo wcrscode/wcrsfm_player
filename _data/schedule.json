@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-06T13:16:33",
+  "fetched_at": "2026-09-06T13:41:55",
   "days": {
     "MON": [
       {
@@ -240,7 +240,7 @@
         "start_display": "11:00 pm",
         "end_display": "12:00 am",
         "url": "",
-        "program_slug": ""
+        "program_slug": "divinitys-real"
       }
     ],
     "TUE": [
@@ -534,7 +534,7 @@
         "start_display": "5:00 am",
         "end_display": "6:00 am",
         "url": "",
-        "program_slug": ""
+        "program_slug": "modern-jetset"
       },
       {
         "name": "Morning Meditation",
