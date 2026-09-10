@@ -6,7 +6,7 @@ air_time: "Saturdays, 11 a.m."
 type: "local"
 more_info: ""
 source_url: "https://www.wcrsfm.org/programs/electric-age-john-horan"
-genre: "nMusic / Culture / Technology / History"
+genre: "Music / Culture / Technology / History"
 mixcloud_name_prefix:
   - "The Electric Age"
 ---
