@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-06T13:41:55",
+  "fetched_at": "2026-09-19T19:10:06",
   "days": {
     "MON": [
       {
@@ -1243,8 +1243,8 @@
         "program_slug": "indigenous-in-music"
       },
       {
-        "name": "50 Ways to Weave Your Covers",
-        "description": "50 Ways to Weave Your Covers, with Gray Wheeler and DJ Erik Mattox, is a one-hour talk show featuring music on Asheville FM (103.3) that showcases cover songs, original songs that gained fame when covered, and obscure hip-hop sample sources. We revel in the unexpected, such as funky covers of mainstream \" often staid \" originals, gender-swapped covers, and artist tributes.",
+        "name": "Cafe International",
+        "description": "",
         "start": "18:00",
         "end": "19:00",
         "start_display": "6:00 pm",
@@ -1315,14 +1315,14 @@
         "program_slug": "shortwave-report"
       },
       {
-        "name": "Saturday Sounds (rerun)",
+        "name": "The Electric Age with John Horan (rerun)",
         "description": "",
         "start": "01:00",
         "end": "03:00",
         "start_display": "1:00 am",
         "end_display": "3:00 am",
         "url": "",
-        "program_slug": ""
+        "program_slug": "electric-age-john-horan"
       },
       {
         "name": "Yesterday's Wine",
@@ -1465,14 +1465,14 @@
         "program_slug": "bobs-basement-jazz"
       },
       {
-        "name": "The Final Straw",
+        "name": "STAR\u2737KISS RADIO",
         "description": "",
         "start": "23:00",
         "end": "00:00",
         "start_display": "11:00 pm",
         "end_display": "12:00 am",
         "url": "",
-        "program_slug": "final-straw"
+        "program_slug": ""
       }
     ]
   }

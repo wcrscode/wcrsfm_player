@@ -131,7 +131,10 @@ def group_by_day(raw, prog_exact, prog_spaced):
             continue
         dow = DAY_NAMES[start.weekday()]
         name = s.get("name") or ""
-        key = (dow, start.strftime("%H:%M"), name)
+        # Normalize the name in the dedup key so casing variance across
+        # weeks (e.g. "Cafe International" vs "Cafe international")
+        # collapses to a single entry instead of two.
+        key = (dow, start.strftime("%H:%M"), _norm_title(name))
         if key in seen:
             continue
         seen.add(key)
@@ -151,6 +154,7 @@ def group_by_day(raw, prog_exact, prog_spaced):
     for d in DAY_NAMES:
         days[d].sort(key=lambda x: x["start"])
     apply_local_overrides(days)
+    merge_split_shows(days)
     return days, unmatched
 
 
@@ -170,6 +174,75 @@ def apply_local_overrides(days):
             if s["start"] == "08:00" and ("democracy now" in n or "democracynow" in n):
                 s["end"] = "09:00"
                 s["end_display"] = "9:00 am"
+
+
+_HOUR_HALF_RE = re.compile(
+    r"^(?P<base>.+?),\s*hour\s*(?P<half>[12])(?P<tag>\s*\(.*\))?\s*$", re.I)
+_FIRST_SECOND_HALF_RE = re.compile(
+    r"^(?P<base>.+?)\s*[-–—]\s*(?P<half>first|second)\s+half\s*$", re.I)
+
+# Canonical display name overrides for merged shows, keyed by
+# _norm_title(base) so casing variance in the upstream feed doesn't leak
+# through (e.g. "Cafe international" one week, "Cafe International" the
+# next).
+_MERGED_NAME_OVERRIDES = {
+    "cafe international": "Cafe International",
+}
+
+
+def _split_half_key(name: str):
+    """If `name` looks like one half of a split show, return
+    (base, tag, half) where half is 1 or 2. Else None."""
+    m = _HOUR_HALF_RE.match(name)
+    if m:
+        return (m.group("base").strip(),
+                m.group("tag") or "",
+                int(m.group("half")))
+    m = _FIRST_SECOND_HALF_RE.match(name)
+    if m:
+        return (m.group("base").strip(),
+                "",
+                1 if m.group("half").lower() == "first" else 2)
+    return None
+
+
+def merge_split_shows(days):
+    """Merge adjacent slots that represent halves of the same show into a
+    single entry. Handles the "X, hour 1" + "X, hour 2" pattern (with an
+    optional trailing tag like "(rerun)") and the "X - first half" +
+    "X - second half" pattern."""
+    for d in DAY_NAMES:
+        slots = days[d]
+        out = []
+        i = 0
+        while i < len(slots):
+            cur = slots[i]
+            nxt = slots[i + 1] if i + 1 < len(slots) else None
+            merged = None
+            if nxt and cur["end"] == nxt["start"]:
+                a = _split_half_key(cur["name"])
+                b = _split_half_key(nxt["name"])
+                if (a and b
+                        and a[2] == 1 and b[2] == 2
+                        and a[0].lower() == b[0].lower()
+                        and a[1] == b[1]):
+                    base, tag = a[0], a[1]
+                    canonical = _MERGED_NAME_OVERRIDES.get(_norm_title(base))
+                    display_base = canonical or base
+                    merged = dict(cur)
+                    merged["name"] = f"{display_base}{tag}".strip()
+                    merged["end"] = nxt["end"]
+                    merged["end_display"] = nxt["end_display"]
+                    merged["description"] = cur["description"] or nxt["description"]
+                    merged["url"] = cur["url"] or nxt["url"]
+                    merged["program_slug"] = cur["program_slug"] or nxt["program_slug"]
+            if merged is not None:
+                out.append(merged)
+                i += 2
+            else:
+                out.append(cur)
+                i += 1
+        days[d] = out
 
 
 def main():
