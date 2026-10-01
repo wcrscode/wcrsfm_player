@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-19T19:10:06",
+  "fetched_at": "2026-10-01T07:18:55",
   "days": {
     "MON": [
       {
@@ -535,6 +535,16 @@
         "end_display": "6:00 am",
         "url": "",
         "program_slug": "modern-jetset"
+      },
+      {
+        "name": "Synthpop Nonstop",
+        "description": "Synthpop Nonstop is a beat-mixed, one-hour music show that features a diverse selection of classic and contemporary electronic and indie dance music with brisk, informational mic breaks.",
+        "start": "05:00",
+        "end": "06:00",
+        "start_display": "5:00 am",
+        "end_display": "6:00 am",
+        "url": "",
+        "program_slug": "synthpop-nonstop"
       },
       {
         "name": "Morning Meditation",
@@ -1365,14 +1375,14 @@
         "program_slug": "latino-music-dj-supermex"
       },
       {
-        "name": "rekloos presents: BASS KULTURE",
-        "description": "Sundays at noon. From the early jamaican sounds to today\u2019s contemporary ska, reggae, dub, dancehall, bass music. Listen to archived shows at Rekloos\u2019 Mixcloud.",
+        "name": "Modern Jetset ",
+        "description": "Come fly the fancy skies! Iris Berkeley is your pilot for Modern Jetset, a weekly round-the-world trip through music from soul to synthpop, reggae to R&B, Latin to lounge, and more. With a strong focus on new and recent releases, Modern Jetset also connects the dots between fresh new favorites and the vintage sounds and retro selections that inspire today's independent music landscape.",
         "start": "12:00",
         "end": "13:00",
         "start_display": "12:00 pm",
         "end_display": "1:00 pm",
-        "url": "",
-        "program_slug": "rekloos-presents-bass-kulture"
+        "url": "https://modernjetset.com",
+        "program_slug": "modern-jetset"
       },
       {
         "name": "Dawg Day Radio",
@@ -1415,14 +1425,14 @@
         "program_slug": "new-tunes-old-cats"
       },
       {
-        "name": "Bottom Up Show",
-        "description": "",
+        "name": "Bass Kulture",
+        "description": "Island rhythms of all types. Reggae, dancehall, dub, etc.",
         "start": "17:00",
         "end": "18:00",
         "start_display": "5:00 pm",
         "end_display": "6:00 pm",
         "url": "",
-        "program_slug": ""
+        "program_slug": "rekloos-presents-bass-kulture"
       },
       {
         "name": "Turn It Up",
@@ -1466,13 +1476,13 @@
       },
       {
         "name": "STAR\u2737KISS RADIO",
-        "description": "",
+        "description": "A PRODUCTION OF STAR KISS MAG - A 60 minute curated journey through unique sounds and styles featuring the best in underground electronic music.",
         "start": "23:00",
         "end": "00:00",
         "start_display": "11:00 pm",
         "end_display": "12:00 am",
-        "url": "",
-        "program_slug": ""
+        "url": "https://www.mixcloud.com/STARKISSRADIO/",
+        "program_slug": "star-kiss-radio"
       }
     ]
   }
