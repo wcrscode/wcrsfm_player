@@ -40,6 +40,8 @@ USERS = [
     "BigBeefProductions",
     "beatreats",
     "Cultural_Popcorn",
+    "irisberkeley",
+    "STARKISSRADIO",
 ]
 
 LIMIT      = int(os.environ.get("LIMIT", "20"))
