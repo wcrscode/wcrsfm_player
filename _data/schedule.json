@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-01T07:18:55",
+  "fetched_at": "2026-10-01T07:57:22",
   "days": {
     "MON": [
       {
@@ -1260,7 +1260,7 @@
         "start_display": "6:00 pm",
         "end_display": "7:00 pm",
         "url": "",
-        "program_slug": ""
+        "program_slug": "cafe-international"
       },
       {
         "name": "beaTreats",
