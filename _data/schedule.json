@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-01T07:57:22",
+  "fetched_at": "2026-10-07T06:49:21",
   "days": {
     "MON": [
       {
@@ -525,16 +525,6 @@
         "end_display": "5:00 am",
         "url": "",
         "program_slug": "night-plant"
-      },
-      {
-        "name": "The Modern Jetset",
-        "description": "",
-        "start": "05:00",
-        "end": "06:00",
-        "start_display": "5:00 am",
-        "end_display": "6:00 am",
-        "url": "",
-        "program_slug": "modern-jetset"
       },
       {
         "name": "Synthpop Nonstop",
@@ -1163,11 +1153,21 @@
         "program_slug": "steam-room"
       },
       {
+        "name": "Transpositions",
+        "description": "Transpositions: Soundscapes at the Crossroads of Jazz, Classical and Soundtrack Music!\r\n\r\nTranspositions is a one-hour weekly show featuring long eclectic instrumental sets. the show draws on the rich variety of music under the umbrella of the jazz, modern classical and soundtrack genres. Distinctive hand-picked extended mixes and minimal host talk put the music front and center.",
+        "start": "02:00",
+        "end": "03:00",
+        "start_display": "2:00 am",
+        "end_display": "3:00 am",
+        "url": "",
+        "program_slug": "transpositions"
+      },
+      {
         "name": "WCRS Overnight",
         "description": "",
-        "start": "02:00",
+        "start": "03:00",
         "end": "04:00",
-        "start_display": "2:00 am",
+        "start_display": "3:00 am",
         "end_display": "4:00 am",
         "url": "",
         "program_slug": "wcrs-overnight"
