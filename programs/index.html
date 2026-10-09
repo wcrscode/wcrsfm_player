@@ -13,8 +13,31 @@ permalink: /programs/
 </div>
 
 {% assign letters = "A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z" | split: "," %}
-{% assign programs = site.programs | default: empty_array | sort: "title" %}
-{% assign grouped = programs | group_by_exp: "p", "p.title | upcase | slice: 0, 1" | sort: "name" %}
+{% assign programs_raw = site.programs | default: empty_array %}
+
+{%- comment -%}
+Sort programs by their "effective title" (leading "The " stripped), so
+"The Ear Opener" lands next to "Earrings Hour" instead of under T.
+Composite string "effective-title~~index" lets sort_natural order by
+effective title; the index tag preserves identity so we can look the
+original program back up with `slice`.
+{%- endcomment -%}
+{% assign sort_keys = "" | split: "" %}
+{% for p in programs_raw %}
+  {% assign eff = p.title | remove_first: "The " | downcase %}
+  {% assign one = eff | append: "~~" | append: forloop.index0 | split: "~!NEVER!~" %}
+  {% assign sort_keys = sort_keys | concat: one %}
+{% endfor %}
+{% assign sort_keys = sort_keys | sort_natural %}
+
+{% assign programs = "" | split: "" %}
+{% for k in sort_keys %}
+  {% assign idx = k | split: "~~" | last | plus: 0 %}
+  {% assign one = programs_raw | slice: idx, 1 %}
+  {% assign programs = programs | concat: one %}
+{% endfor %}
+
+{% assign grouped = programs | group_by_exp: "p", "p.title | remove_first: 'The ' | upcase | slice: 0, 1" | sort: "name" %}
 
 {% assign present_letters = "" %}
 {% assign has_num = false %}

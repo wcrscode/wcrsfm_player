@@ -44,6 +44,15 @@ USERS = [
     "STARKISSRADIO",
 ]
 
+# Per-account URI blocklist: for each account, skip any Mixcloud key whose
+# path contains one of these substrings. Lets us subscribe to a Mixcloud
+# profile without pulling every show on it. Iris Berkeley uploads both
+# Modern Jetset (airs on WCRS) and Jetset Underground (airs on KVCU) to
+# the same account; we only want Modern Jetset.
+SKIP_IF_KEY_CONTAINS = {
+    "irisberkeley": ["jetset-underground"],
+}
+
 LIMIT      = int(os.environ.get("LIMIT", "20"))
 PIC_SIZE   = "extra_large"        # 600x600; fallbacks below if missing
 UA         = "wcrs-jekyll/1.0 (+https://wcrsfm.org)"
@@ -108,10 +117,14 @@ def fetch_user(user: str, known: set[str]) -> list[dict]:
         return []
 
     items = listing.get("data", [])
+    skip_patterns = SKIP_IF_KEY_CONTAINS.get(user, [])
     out = []
     for item in items:
         key = item["key"]
         if key in known:
+            continue
+        if any(p in key for p in skip_patterns):
+            print(f"  - {user}: skipping {key} (blocklist)")
             continue
         known.add(key)  # guard against dupes within this run too
 
