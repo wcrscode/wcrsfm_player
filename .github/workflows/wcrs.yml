@@ -1,0 +1,101 @@
+name: WCRS build & deploy
+
+on:
+  workflow_dispatch:
+    inputs:
+      fetch_shows:
+        description: "Run fetch_shows.py (pull new Mixcloud shows)"
+        type: boolean
+        default: false
+      fetch_schedule:
+        description: "Run getschedulejson.py (refresh weekly schedule)"
+        type: boolean
+        default: false
+      deploy:
+        description: "Build and deploy to DreamHost"
+        type: boolean
+        default: true
+
+concurrency:
+  group: wcrs-deploy
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
+
+      - name: Restore deploy-state cache (mtime manifest)
+        uses: actions/cache@v4
+        with:
+          path: .deploy_state
+          key: deploy-state-${{ github.ref_name }}-${{ github.run_id }}
+          restore-keys: |
+            deploy-state-${{ github.ref_name }}-
+
+      - name: Fetch shows
+        if: ${{ inputs.fetch_shows }}
+        run: python3 scripts/fetch_shows.py
+
+      - name: Fetch schedule
+        if: ${{ inputs.fetch_schedule }}
+        run: python3 getschedulejson.py
+
+      - name: Jekyll build
+        if: ${{ inputs.deploy }}
+        run: bundle exec jekyll build
+
+      - name: Freeze mtimes
+        if: ${{ inputs.deploy }}
+        run: python3 scripts/freeze_mtimes.py
+
+      - name: Install lftp
+        if: ${{ inputs.deploy }}
+        run: sudo apt-get update && sudo apt-get install -y lftp
+
+      - name: Deploy to DreamHost
+        if: ${{ inputs.deploy }}
+        env:
+          DH_HOST: ${{ secrets.DH_HOST }}
+          DH_USER: ${{ secrets.DH_USER }}
+          DH_REMOTE_DIR: ${{ secrets.DH_REMOTE_DIR }}
+          DH_SSH_KEY: ${{ secrets.DH_SSH_KEY }}
+        run: |
+          mkdir -p ~/.ssh
+          printf '%s\n' "$DH_SSH_KEY" > ~/.ssh/id_dh
+          chmod 600 ~/.ssh/id_dh
+          ssh-keyscan -H "$DH_HOST" >> ~/.ssh/known_hosts 2>/dev/null
+          lftp -u "$DH_USER", "sftp://$DH_HOST" <<EOF
+          set sftp:connect-program "ssh -a -x -i $HOME/.ssh/id_dh"
+          lcd _site
+          cd $DH_REMOTE_DIR
+          mirror --reverse --only-newer --parallel=3 --verbose
+          quit
+          EOF
+
+      - name: Commit fetched data back to main
+        if: ${{ inputs.fetch_shows || inputs.fetch_schedule }}
+        run: |
+          git config user.name  "wcrs-ci"
+          git config user.email "ci@wcrsfm.org"
+          git add _data/shows.yml _data/schedule.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No data changes to commit."
+          else
+            git commit -m "CI: fetch ${{ inputs.fetch_shows && 'shows ' || '' }}${{ inputs.fetch_schedule && 'schedule' || '' }}"
+            git push
+          fi
