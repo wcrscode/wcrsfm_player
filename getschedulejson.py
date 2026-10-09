@@ -71,7 +71,7 @@ def load_program_index():
       spaced = { normalized_title_no_spaces: slug }
       titles = { slug: original_title }
     for every program markdown file on disk. Empty maps if _programs/ is
-    absent (i.e. before fetch_programs.py has run for the first time).
+    absent.
     """
     exact, spaced, titles = {}, {}, {}
     if not PROG_DIR.exists():

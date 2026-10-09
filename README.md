@@ -80,15 +80,6 @@ LIMIT=50 python3 scripts/fetch_shows.py   # override
 
 `_data/shows.yml` powers the "Recent Music Programs" section on the homepage and the full listing at `/archives/`. To add or remove a Mixcloud source, edit the `USERS` list at the top of `fetch_shows.py`.
 
-## Legacy import scripts
-
-Two additional scripts under `scripts/` were used to migrate content from the old Drupal site. They're kept in the repo for reference but shouldn't need to be re-run:
-
-- **`scripts/fetch_programs.py`** — scraped `wcrsfm.org/local_programs` into `_programs/*.md`
-- **`scripts/fetch_news.py`** — scraped station news and blogs into `_articles/*.html`, and downloaded referenced images into `assets/news/`
-
-Both were incremental (safe to re-run) but are historical at this point.
-
 ## Directory layout
 
 ```
