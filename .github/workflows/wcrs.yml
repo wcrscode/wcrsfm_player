@@ -67,19 +67,45 @@ jobs:
         if: ${{ inputs.deploy }}
         run: sudo apt-get update && sudo apt-get install -y lftp
 
+      - name: Set up SSH credentials
+        if: ${{ inputs.deploy }}
+        env:
+          DH_HOST: ${{ secrets.DH_HOST }}
+          DH_SSH_KEY: ${{ secrets.DH_SSH_KEY }}
+        run: |
+          mkdir -p ~/.ssh && chmod 700 ~/.ssh
+          printf '%s\n' "$DH_SSH_KEY" > ~/.ssh/id_dh
+          chmod 600 ~/.ssh/id_dh
+          echo "--- key file sanity (first and last lines only) ---"
+          ls -la ~/.ssh/id_dh
+          head -1 ~/.ssh/id_dh
+          tail -1 ~/.ssh/id_dh
+          echo "--- ssh-keyscan $DH_HOST ---"
+          ssh-keyscan -H -T 10 "$DH_HOST" | tee -a ~/.ssh/known_hosts
+          test -s ~/.ssh/known_hosts || { echo "ssh-keyscan returned nothing"; exit 1; }
+          echo "--- known_hosts line count: $(wc -l < ~/.ssh/known_hosts) ---"
+
+      - name: Test SSH connection to DreamHost
+        if: ${{ inputs.deploy }}
+        env:
+          DH_HOST: ${{ secrets.DH_HOST }}
+          DH_USER: ${{ secrets.DH_USER }}
+        run: |
+          timeout 30 ssh -v \
+            -o BatchMode=yes \
+            -o ConnectTimeout=15 \
+            -i ~/.ssh/id_dh \
+            "$DH_USER@$DH_HOST" \
+            'echo ok; hostname; pwd'
+
       - name: Deploy to DreamHost
         if: ${{ inputs.deploy }}
         env:
           DH_HOST: ${{ secrets.DH_HOST }}
           DH_USER: ${{ secrets.DH_USER }}
           DH_REMOTE_DIR: ${{ secrets.DH_REMOTE_DIR }}
-          DH_SSH_KEY: ${{ secrets.DH_SSH_KEY }}
         run: |
-          mkdir -p ~/.ssh
-          printf '%s\n' "$DH_SSH_KEY" > ~/.ssh/id_dh
-          chmod 600 ~/.ssh/id_dh
-          ssh-keyscan -H "$DH_HOST" >> ~/.ssh/known_hosts 2>/dev/null
-          lftp -u "$DH_USER", "sftp://$DH_HOST" <<EOF
+          timeout 900 lftp -u "$DH_USER", "sftp://$DH_HOST" <<EOF
           set sftp:connect-program "ssh -a -x -i $HOME/.ssh/id_dh"
           lcd _site
           cd $DH_REMOTE_DIR
