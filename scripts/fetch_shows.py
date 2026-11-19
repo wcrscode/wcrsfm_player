@@ -44,13 +44,13 @@ USERS = [
     "STARKISSRADIO",
 ]
 
-# Per-account URI blocklist: for each account, skip any Mixcloud key whose
-# path contains one of these substrings. Lets us subscribe to a Mixcloud
-# profile without pulling every show on it. Iris Berkeley uploads both
-# Modern Jetset (airs on WCRS) and Jetset Underground (airs on KVCU) to
-# the same account; we only want Modern Jetset.
-SKIP_IF_KEY_CONTAINS = {
-    "irisberkeley": ["jetset-underground"],
+# Per-account title allowlist: for each listed account, only include shows
+# whose name starts with one of these prefixes. Lets us subscribe to a
+# Mixcloud profile that hosts several unrelated programs and pull only the
+# ones that air on WCRS. Iris Berkeley uses one account for Modern Jetset
+# (WCRS) plus other shows that don't air with us; we only want Modern Jetset.
+ONLY_IF_NAME_STARTS_WITH = {
+    "irisberkeley": ("Modern Jetset #",),
 }
 
 LIMIT      = int(os.environ.get("LIMIT", "20"))
@@ -117,14 +117,15 @@ def fetch_user(user: str, known: set[str]) -> list[dict]:
         return []
 
     items = listing.get("data", [])
-    skip_patterns = SKIP_IF_KEY_CONTAINS.get(user, [])
+    allowed_prefixes = ONLY_IF_NAME_STARTS_WITH.get(user)
     out = []
     for item in items:
         key = item["key"]
         if key in known:
             continue
-        if any(p in key for p in skip_patterns):
-            print(f"  - {user}: skipping {key} (blocklist)")
+        name = item["name"]
+        if allowed_prefixes and not name.startswith(allowed_prefixes):
+            print(f"  - {user}: skipping {key} (not in allowlist: {name!r})")
             continue
         known.add(key)  # guard against dupes within this run too
 
